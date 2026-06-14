@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wdro&#380;enie SSAI w platformie streamingowej - Aktualno&#347;ci | iTVT Press</title>
+  <meta name="description" content="iTVT wdra&#380;a Server-Side Ad Insertion (SSAI) oraz integracj&#281; odtwarzacza z SRT. Optymalizacja backendu platformy IPTV z klastrem K3s w trybie rootless." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://press.itvt.xyz/news/2026/06/01/" />
+  <link rel="alternate" type="application/rss+xml" title="iTVT Press RSS" href="../../../rss.xml" />
+  <link rel="alternate" hreflang="pl" href="https://press.itvt.xyz/news/2026/06/01/" />
+  <link rel="alternate" hreflang="x-default" href="https://press.itvt.xyz/news/2026/06/01/" />
+  <link rel="stylesheet" href="../../../css/style.min.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "iTVT Poland Group",
+    "url": "https://itvt.xyz", "foundingDate": "2023-03-10",
+    "address": { "@type": "PostalAddress", "addressLocality": "Warszawa", "addressCountry": "PL" },
+    "sameAs": [ "https://youtube.com/@itvt_pl", "https://instagram.com/itvt_poland", "https://tiktok.com/@itvt_poland", "https://github.com/open-itvt" ]
+  }
+  </script>
+  <script>
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']);
+  (function() {
+    var u='https://itvtxyz.matomo.cloud/';
+    _paq.push(['setTrackerUrl', u+'matomo.php']); _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://cdn.matomo.cloud/itvtxyz.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <link rel="sitemap" type="application/xml" href="../../../../sitemap.xml" title="Sitemap" />
+</head>
+<body>
+
+<div class="paper-wrapper">
+
+  <header class="newspaper-header">
+    <div class="tel-page-header">
+      <span>TELEGAZETA  <span class="page-num">PAGE 112</span></span>
+      <span>press.itvt.xyz/news/2026/06/01/</span>
+      <span id="press-date"></span>
+    </div>
+    <div class="header-top">
+      <span>ROCZNIK I</span>
+      <span>WARSZAWA, POLSKA — AKTUALNO&#346;CI</span>
+      <span>OPEN SOURCE / CC BY 4.0</span>
+    </div>
+    <h1 aria-label="iTVT Press - aktualność">
+      <pre aria-hidden="true" class="ascii-logo">
+ ___   _______  __   __  _______    _______  ______    _______  _______  _______
+|   | |       ||  | |  ||       |  |       ||    _ |  |       ||       ||       |
+|   | |_     _||  |_|  ||_     _|  |    _  ||   | ||  |    ___||  _____||  _____|
+|   |   |   |  |       |  |   |    |   |_| ||   |_||_ |   |___ | |_____ | |_____
+|   |   |   |  |       |  |   |    |    ___||    __  ||    ___||_____  ||_____  |
+|   |   |   |   |     |   |   |    |   |    |   |  | ||   |___  _____| | _____| |
+|___|   |___|    |___|    |___|    |___|    |___|  |_||_______||_______||_______|
+      </pre>
+    </h1>
+    <div class="header-badge">
+      AKTUALNO&#346;CI *** WDRO&#379;ENIE SSAI I OPTYMALIZACJA BACKENDU PLATFORMY IPTV
+    </div>
+    <div class="tel-colorbar">
+      <div class="tel-colorbar-item is-red"></div>
+      <div class="tel-colorbar-item is-green"></div>
+      <div class="tel-colorbar-item is-yellow"></div>
+      <div class="tel-colorbar-item is-blue"></div>
+      <div class="tel-colorbar-item is-magenta"></div>
+      <div class="tel-colorbar-item is-cyan"></div>
+    </div>
+  </header>
+
+  <main class="newspaper-grid">
+
+    <aside class="sidebar-column">
+      <section>
+        <pre aria-hidden="true" class="tel-subheader">
+ _ _  _ ___  ____ _  _
+ | |\ | |  \ |___  \/
+ | | \| |__/ |___ _/\_
+        </pre>
+        <nav class="newspaper-nav">
+          <a href="../../../index.html" class="nav-link">&#10148; AKTUALNO&#346;CI</a>
+          <a href="../../../wydanie.html" class="nav-link">&#10148; WYDANIE G&#321;ÓWNE</a>
+          <a href="../../../cytaty.html" class="nav-link">&#10148; MEDIA, O NAS</a>
+          <a href="../../../historia.html" class="nav-link">&#10148; KAMIENIE MILOWE</a>
+          <a href="../../../zespol.html" class="nav-link">&#10148; ZESPÓ&#321;</a>
+          <a href="../../../kontakt.html" class="nav-link">&#10148; KONTAKT / SOCIAL</a>
+          <a href="../../../rss.xml" class="nav-link" target="_blank">&#10148; KANA&#321; RSS</a>
+          <a href="https://itvt.xyz" class="nav-link" target="_blank">&#10148; STRONA G&#321;ÓWNA</a>
+        </nav>
+      </section>
+      <section class="specs-section">
+        <h2 class="fs-085" style="font-family:var(--font-mono);font-weight:700;margin:0 0 0.3rem 0;">METRYKA</h2>
+        <ul class="specs-list">
+          <li><strong>STACK:</strong> K3s / Rootless</li>
+          <li><strong>PROTOKÓ&#321;:</strong> SRT / RTMP / HLS</li>
+          <li><strong>SSAI:</strong> Server-Side Ad Insertion</li>
+        </ul>
+      </section>
+    </aside>
+
+    <div class="content-column">
+      <article>
+        <div class="post-meta">
+          <span class="post-cat">Infrastruktura</span>
+          <span>2026-06-01</span>
+        </div>
+        <h2 class="article-title">Wdro&#380;enie SSAI w platformie streamingowej iTVT</h2>
+        <p class="article-lead">
+          Infrastruktura iTVT Poland Group przesz&#322;a gruntown&#261; optymalizacj&#281;
+          backendu. Wdro&#380;ono Server-Side Ad Insertion oraz integracj&#281; odtwarzacza
+          z protoko&#322;em SRT dla telewizji internetowej wy&#380;szej jako&#347;ci.
+        </p>
+        <div class="article-body">
+          <p>
+            Infrastruktura iTVT Poland Group przesz&#322;a gruntown&#261; optymalizacj&#281;
+            backendu. Wdro&#380;ono <strong>Server-Side Ad Insertion (SSAI)</strong>
+            oraz bezpo&#347;redni&#261; integracj&#281; dedykowanego odtwarzacza z wydajnym
+            protoko&#322;em SRT.
+          </p>
+          <p><strong>Co si&#281; zmieni&#322;o:</strong></p>
+          <ul>
+            <li>System SSAI umo&#380;liwia p&#322;ynn&#261; insertcj&#281; reklam po stronie serwera</li>
+            <li>Dedykowany odtwarzacz zoptymalizowany pod k&#261;tem SRT</li>
+            <li>Klaster K3s dzia&#322;a w trybie rootless dla wi&#281;kszego bezpiecze&#324;stwa</li>
+            <li>Pancerne powiadomienia i monitoring dla natychmiastowej reakcji na anomalie</li>
+          </ul>
+          <p>
+            Ca&#322;y ekosystem streamingowy optymalizowany jest pod k&#261;tem
+            minimalnego zu&#380;ycia zasobów przy maksymalnej wydajno&#347;ci sieciowej.
+            Dzi&#281;ki tym zmianom platforma telewizji internetowej iTVT oferuje
+            jeszcze wy&#380;szy poziom niezawodno&#347;ci i jako&#347;ci transmisji.
+          </p>
+        </div>
+        <a href="../../../index.html" class="post-readmore">&#10148; Powrót do aktualno&#347;ci</a>
+      </article>
+    </div>
+  </main>
+
+  <footer class="newspaper-footer">
+    <div class="tel-colorbar">
+      <div class="tel-colorbar-item is-red"></div>
+      <div class="tel-colorbar-item is-green"></div>
+      <div class="tel-colorbar-item is-yellow"></div>
+      <div class="tel-colorbar-item is-blue"></div>
+      <div class="tel-colorbar-item is-magenta"></div>
+      <div class="tel-colorbar-item is-cyan"></div>
+    </div>
+    <div class="footer-links-row">
+      <a href="https://itvt.xyz">Strona g&#322;ówna</a>
+      <a href="https://github.com/open-itvt">GitHub</a>
+      <a href="https://discord.gg/QptUUsXQCf">Discord</a>
+      <a href="../../../rss.xml">RSS</a>
+    </div>
+    <p>&copy; 2026 iTVT Poland Group | CC BY 4.0</p>
+  </footer>
+
+</div>
+
+<script>document.getElementById('press-date').textContent=new Date().toISOString().slice(0,10);</script>
+
+</body>
+</html>

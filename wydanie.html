@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iTVT Press - Wydanie g&#322;ówne | Telewizja Internetowa IPTV Nowa Era</title>
+  <meta name="description" content="Wydanie g&#322;ówne iTVT Poland Group. Artyku&#322; o platformie telewizji internetowej IPTV, architekturze SRT/RTMP, module RevoStream w Rust i aplikacjach multi-platform." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://press.itvt.xyz/wydanie.html" />
+  <link rel="alternate" type="application/rss+xml" title="iTVT Press RSS" href="rss.xml" />
+  <link rel="alternate" hreflang="pl" href="https://press.itvt.xyz/wydanie.html" />
+  <link rel="alternate" hreflang="x-default" href="https://press.itvt.xyz/wydanie.html" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "iTVT Poland Group",
+    "url": "https://itvt.xyz",
+    "description": "Nowoczesna platforma telewizji internetowej IPTV nowej generacji.",
+    "foundingDate": "2023-03-10",
+    "address": { "@type": "PostalAddress", "addressLocality": "Warszawa", "addressCountry": "PL" },
+    "sameAs": [
+      "https://youtube.com/@itvt_pl",
+      "https://instagram.com/itvt_poland",
+      "https://tiktok.com/@itvt_poland",
+      "https://github.com/open-itvt"
+    ]
+  }
+  </script>
+  <script>
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']);
+  (function() {
+    var u='https://itvtxyz.matomo.cloud/';
+    _paq.push(['setTrackerUrl', u+'matomo.php']); _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://cdn.matomo.cloud/itvtxyz.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+  <link rel="sitemap" type="application/xml" href="./sitemap.xml" title="Sitemap" />
+</head>
+<body>
+
+<div class="paper-wrapper">
+
+  <header class="newspaper-header">
+    <div class="tel-page-header">
+      <span>TELEGAZETA  <span class="page-num">PAGE 101</span></span>
+      <span>press.itvt.xyz/wydanie</span>
+      <span id="press-date"></span>
+    </div>
+    <div class="header-top">
+      <span>ROCZNIK I</span>
+      <span>WARSZAWA, POLSKA — WYDANIE G&#321;ÓWNE</span>
+      <span>OPEN SOURCE / CC BY 4.0</span>
+    </div>
+    <h1 aria-label="iTVT Press - wydanie główne telewizji internetowej">
+      <pre aria-hidden="true" class="ascii-logo">
+ ___   _______  __   __  _______    _______  ______    _______  _______  _______
+|   | |       ||  | |  ||       |  |       ||    _ |  |       ||       ||       |
+|   | |_     _||  |_|  ||_     _|  |    _  ||   | ||  |    ___||  _____||  _____|
+|   |   |   |  |       |  |   |    |   |_| ||   |_||_ |   |___ | |_____ | |_____|
+|   |   |   |  |       |  |   |    |    ___||    __  ||    ___||_____  ||_____  |
+|   |   |   |   |     |   |   |    |   |    |   |  | ||   |___  _____| | _____| |
+|___|   |___|    |___|    |___|    |___|    |___|  |_||_______||_______||_______|
+      </pre>
+    </h1>
+    <div class="header-badge">
+      WYDANIE G&#321;ÓWNE *** iTVT POLAND GROUP *** NOWA ERA TELEWIZJI INTERNETOWEJ
+    </div>
+    <div class="tel-colorbar">
+      <div class="tel-colorbar-item is-red"></div>
+      <div class="tel-colorbar-item is-green"></div>
+      <div class="tel-colorbar-item is-yellow"></div>
+      <div class="tel-colorbar-item is-blue"></div>
+      <div class="tel-colorbar-item is-magenta"></div>
+      <div class="tel-colorbar-item is-cyan"></div>
+    </div>
+  </header>
+
+  <main class="newspaper-grid">
+
+    <aside class="sidebar-column">
+      <section>
+        <pre aria-hidden="true" class="tel-subheader">
+ _ _  _ ___  ____ _  _
+ | |\ | |  \ |___  \/
+ | | \| |__/ |___ _/\_
+        </pre>
+        <nav class="newspaper-nav">
+          <a href="index.html" class="nav-link">&#10148; AKTUALNO&#346;CI</a>
+          <a href="wydanie.html" class="nav-link active">&#10148; WYDANIE G&#321;ÓWNE</a>
+          <a href="cytaty.html" class="nav-link">&#10148; MEDIA, O NAS</a>
+          <a href="historia.html" class="nav-link">&#10148; KAMIENIE MILOWE</a>
+          <a href="zespol.html" class="nav-link">&#10148; ZESPÓ&#321;</a>
+          <a href="kontakt.html" class="nav-link">&#10148; KONTAKT / SOCIAL</a>
+          <a href="rss.xml" class="nav-link" target="_blank">&#10148; KANA&#321; RSS</a>
+          <a href="https://itvt.xyz" class="nav-link" target="_blank">&#10148; STRONA G&#321;ÓWNA</a>
+        </nav>
+      </section>
+
+      <section class="specs-section">
+        <h2 class="fs-085" >METRYKA TRANSMISJI</h2>
+        <ul class="specs-list">
+          <li><strong>STACK:</strong> K3s / Rootless</li>
+          <li><strong>PROTOKÓ&#321;:</strong> SRT / RTMP / HLS</li>
+          <li><strong>BACKEND:</strong> Rust / libobs-rs</li>
+          <li><strong>STREAMING:</strong> MediaMTX</li>
+          <li><strong>SSAI:</strong> Server-Side Ad Insertion</li>
+        </ul>
+      </section>
+
+      <section class="alert-section">
+        <h2 class="fs-085" >Z OSTATNIEJ CHWILI!</h2>
+        <p>
+          Kod źród&#322;owy modu&#322;u transmisyjnego RevoStream zosta&#322; ca&#322;kowicie
+          oczyszczony z surowych odwo&#322;a&#324; w j&#281;zyku C. Remaster biblioteki
+          libobs-rs w Rust zabezpiecza aplikacj&#281; przed b&#322;edami alokacji pami&#281;ci.
+        </p>
+      </section>
+    </aside>
+
+    <div class="content-column">
+      <article>
+        <h2 class="article-title">iTVT POLAND GROUP: NOWA ERA TELEWIZJI INTERNETOWEJ IPTV</h2>
+        <p class="article-lead">
+          iTVT to projekt tworz&#261;cy nowoczesne rozwi&#261;zania medialne oraz realizacje
+          dla partnerów. &#321;&#261;czymy technologi&#281; i kreatywno&#347;&#263; z mediami
+          przysz&#322;o&#347;ci. Platforma telewizji internetowej IPTV oferuje dost&#281;p do
+          szerokiej gamy kana&#322;ów online oraz aplikacje na Windows, Linux, macOS i Android.
+        </p>
+
+        <div class="article-body">
+          <p>
+            iTVT Poland Group powsta&#322;a w 10 marca 2023 roku z my&#347;l&#261; o stworzeniu
+            w pe&#322;ni niezale&#380;nej platformy telewizji internetowej IPTV. W przeciwie&#324;stwie
+            do tradycyjnych dostawców, iTVT stawia na otwarto&#347;&#263; kodu źród&#322;owego,
+            transparentno&#347;&#263; i spo&#322;eczno&#347;&#263;. Projekt jest rozwijany przez
+            pasjonatów, których &#322;&#261;czy wizja mediów wolnych od ogranicze&#324; i cenzury.
+            Nasz&#261; misj&#261; jest dostarczanie wysokiej jako&#347;ci telewizji internetowej
+            dost&#281;pnej dla ka&#380;dego, niezale&#380;nie od u&#380;ywanego urz&#261;dzenia
+            czy systemu operacyjnego.
+          </p>
+
+          <p>
+            W ramach ekosystemu iTVT dzia&#322;aj&#261;:
+            <strong>iVOD</strong> (vod.itvt.xyz) — centralny punkt dost&#281;pu do
+            kana&#322;ów streamingowych, oraz infrastruktura transmisyjna oparta o
+            protoko&#322;y SRT i RTMP. Aplikacje klienckie dla telewizji internetowej
+            dost&#281;pne s&#261; na systemy Windows, Linux, macOS oraz Android, co
+            gwarantuje pe&#322;n&#261; swobod&#281; wyboru urz&#261;dzenia.
+          </p>
+
+          <div class="tel-box tel-bg-black tel-clr-yellow">
+            <strong>PAGE 102 — STACK TECHNOLOGICZNY</strong><br />
+            &#9656; Protoko&#322;y: SRT / RTMP / HLS (m3u8)<br />
+            &#9656; Cluster: K3s (Rootless)<br />
+            &#9656; Backend: Rust / libobs-rs<br />
+            &#9656; Streaming: MediaMTX<br />
+            &#9656; SSAI: Server-Side Ad Insertion<br />
+            &#9656; Repozytorium: github.com/open-itvt
+          </div>
+
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <div>[ OBRAZ: iTVT DASHBOARD / RE¯YSERKA ]</div>
+              <div class="fs-07 tel-clr-green mt-05">(Wklej tutaj plik: itvt-dashboard.png)</div>
+            </div>
+            <div class="photo-caption">
+              Fot. 1: Panel zarz&#261;dzania strumieniami iTVT. Statystyki klastra K3s
+              oraz wykres bitratu wideo w czasie rzeczywistym dla platformy IPTV.
+            </div>
+          </div>
+
+          <p>
+            Kluczowym elementem architektury telewizji internetowej iTVT jest modu&#322;
+            transmisyjny RevoStream, oparty o bibliotek&#281; libobs-rs w czystym Rustcie.
+            Eliminacja surowych odwo&#322;a&#324; z j&#281;zyka C pozwoli&#322;a na znaczne
+            zwi&#281;kszenie stabilno&#347;ci procesu renderowania klatek oraz zabezpieczenie
+            aplikacji przed b&#322;edami alokacji pami&#281;ci. System monitoringu z pancerzonymi
+            powiadomieniami gwarantuje natychmiastow&#261; reakcj&#281; na anomalie sieciowe,
+            zanim odczuj&#261; je widzowie. Ca&#322;y ekosystem streamingowy optymalizowany
+            jest pod k&#261;tem minimalnego zu&#380;ycia zasobów przy maksymalnej wydajno&#347;ci
+            sieciowej — to w&#322;a&#347;nie t&#281; niezawodno&#347;&#263; doceniaj&#261;
+            nasi partnerzy i u&#380;ytkownicy.
+          </p>
+
+          <p>
+            W planach rozwoju platformy IPTV iTVT na najbli&#380;sze kwarta&#322;y s&#261;
+            mi&#281;dzy innymi: rozszerzenie oferty kana&#322;ów telewizyjnych, wdro&#380;enie
+            zaawansowanych funkcji VOD, integracja z systemami Smart TV oraz dalsza
+            optymalizacja protoko&#322;u SRT. Zapraszamy do &#347;ledzenia naszego
+            <a href="index.html">bloga prasowego</a> i subskrypcji
+            <a href="rss.xml">kana&#322;u RSS</a>, aby by&#263; na bie&#380;&#261;co
+            z najnowszymi informacjami.
+          </p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="newspaper-footer">
+    <div class="tel-colorbar">
+      <div class="tel-colorbar-item is-red"></div>
+      <div class="tel-colorbar-item is-green"></div>
+      <div class="tel-colorbar-item is-yellow"></div>
+      <div class="tel-colorbar-item is-blue"></div>
+      <div class="tel-colorbar-item is-magenta"></div>
+      <div class="tel-colorbar-item is-cyan"></div>
+    </div>
+    <div class="footer-links-row">
+      <a href="https://itvt.xyz">Strona g&#322;ówna</a>
+      <a href="https://github.com/open-itvt">GitHub</a>
+      <a href="https://discord.gg/QptUUsXQCf">Discord</a>
+      <a href="rss.xml">RSS</a>
+    </div>
+    <p>&copy; 2026 iTVT Poland Group | CC BY 4.0</p>
+  </footer>
+
+</div>
+
+<script>document.getElementById('press-date').textContent=new Date().toISOString().slice(0,10);</script>
+
+</body>
+</html>

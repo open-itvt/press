@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+  <channel>
+    <title>iTVT Poland Group — Kana&#322; prasowy RSS</title>
+    <link>https://press.itvt.xyz/</link>
+    <description>Oficjalny kana&#322; RSS press pack iTVT Poland Group. Informacje prasowe, aktualno&#347;ci i komunikaty dotycz&#261;ce platformy telewizji internetowej iTVT (itvt.xyz).</description>
+    <language>pl</language>
+    <lastBuildDate>Sun, 14 Jun 2026 00:00:00 +0200</lastBuildDate>
+    <pubDate>Sun, 14 Jun 2026 00:00:00 +0200</pubDate>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <generator>iTVT Press Pack</generator>
+    <managingEditor>press@itvt.xyz</managingEditor>
+    <webMaster>press@itvt.xyz</webMaster>
+    <copyright>2026 iTVT Poland Group. Licencja CC BY 4.0.</copyright>
+    <category>Technology</category>
+    <image>
+      <url>https://press.itvt.xyz/android-chrome-512x512.png</url>
+      <title>iTVT Poland Group</title>
+      <link>https://press.itvt.xyz/</link>
+      <width>512</width>
+      <height>512</height>
+    </image>
+    <atom:link href="https://press.itvt.xyz/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Migracja repozytoriów iTVT na organizacj&#281; open-itvt</title>
+      <link>https://press.itvt.xyz/news/2026/06/15/migracja-hubu/</link>
+      <description>iTVT Poland Group przeprowadzi&#322;a migracj&#281; repozytoriów z konta osobistego na organizacj&#281; GitHub open-itvt. Wydzielono modu&#322; VOD, opublikowano desktop-app v2.0.0 oraz 9 publicznych repozytoriów.</description>
+      <content:encoded><![CDATA[
+        <p>iTVT Poland Group przeprowadzi&#322;a gruntown&#261; migracj&#281; repozytoriów źród&#322;owych z konta osobistego na oficjaln&#261; organizacj&#281; GitHub open-itvt. W ramach zmian wydzielono modu&#322; VOD, opublikowano aplikacj&#281; desktopow&#261; v2.0.0 oraz uruchomiono narz&#281;dzia QR i roadmap.</p>
+        <p>Organizacja open-itvt zosta&#322;a utworzona 7 stycznia 2026 roku. Najstarsze repozytorium — hub — istnieje od 17 czerwca 2024 roku. Kluczowe zmiany obj&#281;&#322;y wydzielenie VOD, usuni&#281;cie starych po&#322;&#261;cze&#324; z hubem oraz publikacj&#281; pierwszej wersji aplikacji desktopowej.</p>
+        <p>Ekosystem open-itvt obejmuje obecnie 9 repozytoriów: hub, home, vod, desktop-app, desktop-app-dist, qr-shorter, roadmap, coming-soon-itvt oraz press. Wszystkie s&#261; publicznie dost&#281;pne na <a href="https://github.com/open-itvt">github.com/open-itvt</a>.</p>
+      ]]></content:encoded>
+      <dc:creator>iTVT Engineering Team</dc:creator>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">itvt-press-2026-06-15-006</guid>
+      <category>Infrastructure</category>
+      <category>Open Source</category>
+    </item>
+
+    <item>
+      <title>iTVT Poland Group udost&#281;pnia Press Pack na licencji Open Source</title>
+      <link>https://press.itvt.xyz/news/2026/06/15/</link>
+      <description>iTVT Poland Group publikuje oficjalny press pack zawieraj&#261;cy informacje prasowe, dane o platformie, fakty techniczne oraz materia&#322;y dla medi&#243;w. Wszystkie materia&#322;y s&#261; dost&#281;pne na licencji Creative Commons Attribution 4.0.</description>
+      <content:encoded><![CDATA[
+        <p>iTVT Poland Group, nowoczesna platforma telewizji internetowej IPTV, udost&#281;pnia dzi&#347; oficjalny <strong>press pack</strong> dla dziennikarzy i medi&#243;w.</p>
+        <p>Press pack zawiera:</p>
+        <ul>
+          <li>Informacje o projekcie iTVT i jego historii</li>
+          <li>Fact sheet ze stackiem technologicznym (SRT, RTMP, K3s, Rust/libobs-rs)</li>
+          <li>Metryki organizacji i dane kontaktowe</li>
+          <li>Przegl&#261;d prasy i cytaty z medi&#243;w</li>
+          <li>O&#347; czasu rozwoju platformy od 10 marca 2023 roku</li>
+          <li>Informacje o zespole i partnerach</li>
+        </ul>
+        <p>Press pack dost&#281;pny jest pod adresem: <a href="https://press.itvt.xyz/news/2026/06/15/">https://press.itvt.xyz/news/2026/06/15/</a></p>
+      ]]></content:encoded>
+      <dc:creator>iTVT Press Team</dc:creator>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">itvt-press-2026-06-15-001</guid>
+      <category>Press Release</category>
+    </item>
+
+    <item>
+      <title>RevoStream — modu&#322; transmisyjny nowej generacji w czystym Rustcie</title>
+      <link>https://press.itvt.xyz/news/2026/06/15/</link>
+      <description>Modu&#322; transmisyjny RevoStream, oparty o bibliotek&#281; libobs-rs w j&#281;zyku Rust, zosta&#322; ca&#322;kowicie oczyszczony z surowych odwo&#322;a&#324; w j&#281;zyku C. Zwi&#281;ksza to stabilno&#347;&#263; renderowania klatek i bezpiecze&#324;stwo pami&#281;ci.</description>
+      <content:encoded><![CDATA[
+        <p>Zesp&#243;&#322; iTVT Poland Group og&#322;asza pomy&#347;ln&#261; migracj&#281; modu&#322;u transmisyjnego <strong>RevoStream</strong> do czystego Rusta. Biblioteka <code>libobs-rs</code> zosta&#322;a zremasterowana i pozbawiona surowych odwo&#322;a&#324; do j&#281;zyka C.</p>
+        <p><strong>Kluczowe korzy&#347;ci:</strong></p>
+        <ul>
+          <li>Eliminacja b&#322;&#281;d&#243;w alokacji pami&#281;ci w trakcie emisji na &#380;ywo</li>
+          <li>Zwi&#281;kszona stabilno&#347;&#263; procesu renderowania klatek</li>
+          <li>Bezpiecze&#324;stwo pami&#281;ci dzi&#281;ki mechanizmom w&#322;a&#347;ciwym j&#281;zykowi Rust</li>
+          <li>Lepsza wydajno&#347;&#263; przy transmisji strumieniowej w protokole SRT</li>
+        </ul>
+        <p>Kod &#378;r&#243;d&#322;owy modu&#322;u dost&#281;pny jest na repozytorium GitHub: <a href="https://github.com/open-itvt">github.com/open-itvt</a></p>
+      ]]></content:encoded>
+      <dc:creator>Kamil (Klubuntu)</dc:creator>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">itvt-press-2026-05-25-002</guid>
+      <category>Technology</category>
+      <category>Engineering</category>
+    </item>
+
+    <item>
+      <title>Wdro&#380;enie SSAI (Server-Side Ad Insertion) w infrastrukturze iTVT</title>
+      <link>https://press.itvt.xyz/news/2026/06/15/</link>
+      <description>iTVT wdra&#380;a zaawansowany system Server-Side Ad Insertion (SSAI) wraz z integracj&#261; dedykowanego odtwarzacza i protoko&#322;u SRT. Optymalizacja backendu obejmuje tak&#380;e klaster K3s w trybie rootless.</description>
+      <content:encoded><![CDATA[
+        <p>Infrastruktura iTVT Poland Group przesz&#322;a gruntown&#261; optymalizacj&#281; backendu. Wdro&#380;ono <strong>Server-Side Ad Insertion (SSAI)</strong> oraz bezpo&#347;redni&#261; integracj&#281; dedykowanego odtwarzacza z wydajnym protoko&#322;em SRT.</p>
+        <p><strong>Co si&#281; zmieni&#322;o:</strong></p>
+        <ul>
+          <li>System SSAI umo&#380;liwia p&#322;ynn&#261; insertcj&#281; reklam po stronie serwera</li>
+          <li>Dedykowany odtwarzacz zoptymalizowany pod k&#261;tem protoko&#322;u SRT</li>
+          <li>Klaster K3s dzia&#322;a w trybie rootless dla zwi&#281;kszenia bezpiecze&#324;stwa</li>
+          <li>Pancerne powiadomienia i system monitorowania gwarantuj&#261; natychmiastow&#261; reakcj&#281; na anomalie</li>
+        </ul>
+        <p>Ca&#322;y ekosystem optymalizowany jest pod k&#261;tem minimalnego zu&#380;ycia zasob&#243;w przy maksymalnej wydajno&#347;ci sieciowej.</p>
+      ]]></content:encoded>
+      <dc:creator>iTVT Engineering Team</dc:creator>
+      <pubDate>Sun, 14 Jun 2026 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">itvt-press-2026-06-01-003</guid>
+      <category>Technology</category>
+      <category>Infrastructure</category>
+    </item>
+
+    <item>
+      <title>iVOD — centralny punkt dost&#281;pu do kana&#322;&#243;w streamingowych iTVT</title>
+      <link>https://press.itvt.xyz/news/2026/06/11/</link>
+      <description>Platforma iVOD (vod.itvt.xyz) stanowi centralne centrum dost&#281;pu do wszystkich kana&#322;&#243;w i tre&#347;ci streamingowych iTVT. Multi-channel streaming, &#322;atwo&#347;&#263; obs&#322;ugi i dost&#281;pno&#347;&#263; na ka&#380;dym urz&#261;dzeniu.</description>
+      <content:encoded><![CDATA[
+        <p><strong>iVOD</strong> (dost&#281;pny pod adresem <a href="https://press.itvt.xyz/news/2026/06/11/">vod.itvt.xyz</a>) to centralny punkt dost&#281;pu do wszystkich kana&#322;&#243;w i tre&#347;ci streamingowych iTVT Poland Group.</p>
+        <p><strong>Funkcjonalno&#347;ci:</strong></p>
+        <ul>
+          <li><strong>Multi-Channel Streaming</strong> — ogl&#261;daj wiele kana&#322;&#243;w jednocze&#347;nie</li>
+          <li><strong>Latwo&#347;&#263; obs&#322;ugi</strong> — intuicyjny interfejs zaprojektowany z my&#347;l&#261; o u&#380;ytkowniku</li>
+          <li><strong>Multi-Platform</strong> — dost&#281;p z przegl&#261;darki, aplikacji mobilnych i Smart TV</li>
+          <li><strong>Przejrzysto&#347;&#263;</strong> — czytelny uk&#322;ad i nawigacja</li>
+        </ul>
+        <p>Aplikacje klienckie dost&#281;pne na systemy Windows, Linux, macOS oraz Android.</p>
+      ]]></content:encoded>
+      <dc:creator>iTVT Product Team</dc:creator>
+      <pubDate>Thu, 11 Jun 2026 14:00:00 +0200</pubDate>
+      <guid isPermaLink="false">itvt-press-2026-06-11-004</guid>
+      <category>Product</category>
+      <category>Launch</category>
+    </item>
+
+    <item>
+      <title>iTVT Poland Group og&#322;asza wsp&#243;&#322;prac&#281; z tw&#243;rcami internetowymi</title>
+      <link>https://press.itvt.xyz/news/2024/10/07/</link>
+      <description>iTVT Poland Group rozszerza sie&#263; partnersk&#261; o nowych tw&#243;rc&#243;w internetowych: Klubuntu, Reqqel oraz Oliwierdsn/HeXn. Wsp&#243;lne projekty medialne, transmisje online i produkcje wideo.</description>
+      <content:encoded><![CDATA[
+        <p>iTVT Poland Group aktywnie wsp&#243;&#322;pracuje z tw&#243;rcami internetowymi, oferuj&#261;c kompleksowe us&#322;ugi z zakresu produkcji medialnej.</p>
+        <p><strong>Nasi partnerzy:</strong></p>
+        <ul>
+          <li><strong>Klubuntu</strong> (<a href="https://youtube.com/@klubuntu">&#064;klubuntu</a>) — 20-letni programista i projektant, Founder i CEO iTVT</li>
+          <li><strong>Reqqel</strong> (<a href="https://youtube.com/@reqqelen">&#064;reqqelen</a>) — mlody tw&#243;rca muzyczny, Media Developer w iTVT</li>
+          <li><strong>Oliwierdsn / HeXn</strong> — wszechstronny tw&#243;rca gier, vlog&#243;w i tre&#347;ci rozrywkowych</li>
+        </ul>
+        <p>Realizujemy transmisje online, streamy na &#380;ywo, nagrania studyjne oraz postprodukcj&#281; wideo. Dzi&#281;ki nowoczesnemu zapleczu technicznemu ka&#380;dy projekt jest dopracowany w najdrobniejszych szczeg&#243;&#322;ach.</p>
+      ]]></content:encoded>
+      <dc:creator>iTVT Partnership Team</dc:creator>
+      <pubDate>Mon, 07 Oct 2024 00:00:00 +0200</pubDate>
+      <guid isPermaLink="false">itvt-press-2024-10-07-005</guid>
+      <category>Partnership</category>
+      <category>Community</category>
+    </item>
+
+  </channel>
+</rss>
