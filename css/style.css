@@ -530,4 +530,5 @@ a:hover { opacity: 0.75; }
   .header-top { font-size: 0.65rem; }
   .blog-post { padding: 1rem 0; }
   .post-title { font-size: 1.1rem; }
+  .tel-page-header span:nth-child(2) { display: none; }
 }
