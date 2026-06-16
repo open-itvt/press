@@ -88,4 +88,11 @@
     <priority>0.4</priority>
   </url>
 
+  <url>
+    <loc>https://press.itvt.xyz/polityka-prywatnosci.html</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
