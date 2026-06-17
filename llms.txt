@@ -1,26 +1,26 @@
-# iTVT Press &mdash; Blog prasowy iTVT Poland Group
+# iTVT Press — Blog prasowy iTVT Poland Group
 
-> Oficjalny blog prasowy iTVT Poland Group. Informacje dla medi&oacute;w, aktualno&scaron;ci, press pack i materia&lstrok;y prasowe dotyczące platformy telewizji internetowej IPTV nowej generacji.
+> Oficjalny blog prasowy iTVT Poland Group. Informacje dla mediów, aktualności, press pack i materiały prasowe dotyczące platformy telewizji internetowej IPTV nowej generacji.
 
 ## O projekcie
 
-iTVT Poland Group to nowoczesna platforma telewizji internetowej IPTV za&lstrok;o&zdot;ona 10 marca 2023 roku w Warszawie (Al. Solidarno&scar;ć 68/121, 00-240). Projekt oferuje dostę do kana&lstrok;&oacute;w TV online, aplikacje na Windows, Linux, macOS i Android, a tak&zdot;e zaawansowane rozwi&261;zania streamingowe oparte o protoko&lstrok;y SRT i RTMP.
+iTVT Poland Group to nowoczesna platforma telewizji internetowej IPTV założona 10 marca 2023 roku w Warszawie (Al. Solidarność 68/121, 00-240). Projekt oferuje dostęp do kanałów TV online, aplikacje na Windows, Linux, macOS i Android, a także zaawansowane rozwiązania streamingowe oparte o protokoły SRT i RTMP.
 
 - Stack: Docker (Rootless), Gstreamer / Rust, SRT/RTMP/HLS, MediaMTX, SSAI
 - Licencja: Open Source (CC BY 4.0)
 - Organizacja GitHub: github.com/open-itvt
-- Kana&lstrok; RSS: https://press.itvt.xyz/rss.xml
+- Kanał RSS: https://press.itvt.xyz/rss.xml
 
-## Strony g&lstrok;&oacute;wne
+## Strony główne
 
-- Strona g&lstrok;&oacute;wna: https://press.itvt.xyz/
-- Wydanie g&lstrok;&oacute;wne: https://press.itvt.xyz/wydanie.html
+- Strona główna: https://press.itvt.xyz/
+- Wydanie specjalne: https://press.itvt.xyz/wydanie.html
 - Media o nas: https://press.itvt.xyz/media.html
 - Kamienie milowe: https://press.itvt.xyz/historia.html
-- Zesp&oacute;&lstrok;: https://press.itvt.xyz/zespol.html
+- Zespół: https://press.itvt.xyz/zespol.html
 - Kontakt: https://press.itvt.xyz/kontakt.html
 
-## Aktualno&scar;ci
+## Aktualności
 
 - 2026-06-15: Migracja repozytoriów iTVT na organizację open-itvt | https://press.itvt.xyz/news/2026/06/15/migracja-hubu/
 - 2026-06-15: iTVT Poland Group uruchamia oficjalny blog prasowy | https://press.itvt.xyz/news/2026/06/15/
