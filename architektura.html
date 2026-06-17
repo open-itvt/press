@@ -130,7 +130,7 @@
       <section class="specs-section">
         <h3>STACK</h3>
         <ul class="specs-list">
-          <li><strong>CLUSTER:</strong> K3s (Rootless)</li>
+          <li><strong>KONTENER:</strong> Docker (Rootless)</li>
           <li><strong>PROTOKÓ&#321;:</strong> SRT / RTMP / HLS</li>
           <li><strong>BACKEND:</strong> Rust / libobs-rs</li>
           <li><strong>STREAMING:</strong> MediaMTX</li>
@@ -143,20 +143,40 @@
     <div class="content-column">
       <h2 class="article-title">Architektura techniczna iTVT</h2>
       <p class="article-lead">
-        Jak zbudowana jest telewizja internetowa nowej generacji? </br>Poni&#380;ej przegl&#261;d
-        stacku technologicznego iTVT Poland Group.
+        Jak zbudowana jest telewizja internetowa nowej generacji? </br>
+        Przedstawiamy stack technologiczny iTVT Poland Group.
       </p>
 
       <div class="article-body">
 
-        <h3>K3s — lekki klaster Kubernetes</h3>
+        <h3>Konteneryzacja Docker i stabilność platformy</h3>
         <p>
-          Ca&#322;a infrastruktura iTVT dzia&#322;a na klastrze <strong>K3s</strong>
-          w trybie <strong>rootless</strong>. K3s to certyfikowana, lekka dystrybucja
-          Kubernetes zaprojektowana z my&#347;l&#261; o urz&#261;dzeniach z ograniczonymi
-          zasobami. Dzi&#281;ki trybowi rootless ka&#380;dy kontener dzia&#322;a w
-          izolowanej przestrzeni u&#380;ytkownika, co znacz&#261;co zwi&#281;ksza
-          bezpiecze&#324;stwo ca&#322;ej platformy.
+          Cała infrastruktura iTVT opiera się na zaawansowanej architekturze kontenerów <strong>Docker</strong>. 
+          W celu zapewnienia maksymalnej elastyczności i eliminacji ryzyk związanych ze stabilnością, 
+          system został podzielony na wyspecjalizowane, odizolowane usługi:
+        </p>
+
+        <ul>
+          <li>
+            <strong>Główny playout (serce systemu):</strong> Kontener oparty na technologii <em>GStreamer</em>, 
+            który odpowiada bezpośrednio za emisję sygnału – mikser wideo oraz audio dla kanału linearnego iTVT.
+          </li>
+          <li>
+            <strong>Scheduler (zarządzanie):</strong> Dedykowany kontener, który umożliwia planowanie ramówki. 
+            Dzięki niemu playout automatycznie przełącza sceny, programy, zapowiedzi oraz bloki reklamowe.
+          </li>
+          <li>
+            <strong>Broker-listener (obsługa reklam):</strong> Kontener odpowiedzialny za ciągły nasłuch i odbiór 
+            materiałów reklamowych od brokera zewnętrznego (poprzez standardy VAST/VMAP) lub bezpośrednio z plików lokalnych.
+          </li>
+          <li>
+            <strong>Kanały FAST (izolacja):</strong> Każdy kanał typu FAST został wydzielony do osobnego, 
+            niezależnego kontenera, co zapobiega przenoszeniu się ewentualnych błędów i drastycznie zwiększa stabilność całego środowiska.
+          </li>
+        </ul>
+        <p>
+          Nad całością systemu <i>będzie wkrótce czuwać</i>, w celu zminimalizowania czasu ewentualnych przestojów oraz zagwarantowania najwyższej 
+          niezawodności – system monitoringu <strong>Uptime Kuma</strong>, który stale nadzoruje pracę wszystkich kontenerów.
         </p>
 
         <h3>Protoko&#322;y transmisyjne: SRT, RTMP, HLS</h3>
@@ -166,36 +186,87 @@
         <ul>
           <li><strong>SRT</strong> (Secure Reliable Transport) — g&#322;ówny protokó&#322; transmisji na &#380;ywo. Charakteryzuje si&#281; odporno&#347;ci&#261; na straty pakietów i niskim opó&#378;nieniem.</li>
           <li><strong>RTMP</strong> — protokó&#322; u&#380;ywany do ingestu strumienia z &#378;róde&#322; zewn&#281;trznych.</li>
-          <li><strong>HLS</strong> — protokó&#322; dostarczania tre&#347;ci do przegl&#261;darek i urz&#261;dze&#324; mobilnych.</li>
+          <li>
+              <strong>HLS (Low-Latency)</strong> — protokół dostarczania treści do przeglądarek i urządzeń mobilnych. 
+              Dzięki wdrożeniu nowoczesnej technologii bezpośredniej konwersji ze strumienia <strong>SRT na HLS</strong>, 
+              udało się zredukować opóźnienie (latency) w odtwarzaczu u widza w typowych warunkach sieciowych, zaledwie do <strong>3-5 sekund</strong>, 
+              co zapewnia płynny odbiór sygnału w czasie zbliżonym do rzeczywistego.
+          </li>
         </ul>
 
-        <h3>Rust i libobs-rs — wydajno&#347;&#263; i bezpiecze&#324;stwo</h3>
+        <h3>Zaufane oprogramowanie w iTVT</h3>
         <p>
-          Modu&#322; transmisyjny <strong>RevoStream</strong> zosta&#322; napisany w
-          ca&#322;o&#347;ci w j&#281;zyku <strong>Rust</strong> z wykorzystaniem biblioteki
-          <strong>libobs-rs</strong>. Eliminacja surowych odwo&#322;a&#324; do C
-          zwi&#281;ksza stabilno&#347;&#263; renderowania i eliminuje b&#322;&#281;dy
-          alokacji pami&#281;ci.
+          W procesie emisji my oraz nasi partnerzy korzystamy ze sprawdzonych i powszechnie stosowanych rozwiązań,
+          takich jak <strong>RevoStream</strong>, <strong>OBS Studio</strong> oraz <strong>vMix</strong>. 
+          W celu zapewnienia jeszcze wyższego poziomu bezpieczeństwa, większej stabilności, niższego opóźnienia 
+          oraz pełnej kompatybilności, nasz zespół planuje w przyszłości głębszą migrację całego ekosystemu w stronę autorskich rozwiązań.
+        </p>
+        <p>
+          Kluczowym krokiem w tej strategii jest rozwój modułu transmisyjnego <strong>RevoStream</strong>, 
+          który docelowo przepisywany jest w całości w języku <strong>Rust</strong> z wykorzystaniem biblioteki 
+          <strong>libobs-rs</strong>. Eliminacja surowych odwołań do C/C++ drastycznie zwiększyła stabilność renderowania 
+          oraz istotnie redukuje ryzyko błędów związanych z zarządzaniem pamięcią.</br>
+          <a href="/news/2026/06/10/index.html">&#10148; Jak porzuciliśmy OBS Studio dla Rusta, czyli jak powstało RevoStream</a>
+        </p>
+        <p>
+          Cały ekosystem streamingowy iTVT jest rygorystycznie optymalizowany pod kątem minimalnego zużycia zasobów 
+          przy maksymalnej wydajności sieciowej. Projektowany z myślą o wysokiej dostępności i niezawodności usług
         </p>
 
-        <h3>MediaMTX — relay strumieni</h3>
+        <h3>MediaMTX — relay strumieni i nasze mechanizmy fallback</h3>
         <p>
-          Do po&#347;redniczenia mi&#281;dzy ingestem a dystrybucj&#261; wykorzystujemy
-          <strong>MediaMTX</strong> — lekki serwer relayu strumieni, który przyjmuje
-          dane przez SRT/RTMP i przekazuje je do klientów przez HLS.
+          Do pośredniczenia między ingestem a dystrybucją wykorzystujemy <strong>MediaMTX</strong> — lekki 
+          serwer relayu strumieni, który przyjmuje dane przez SRT/RTMP i przekazuje je do klientów przez HLS. 
         </p>
+        <p>
+          W ramach podnoszenia niezawodności nadawania, eksperymentalnie wdrażamy zaawansowany system 
+          <strong>fallback na MediaMTX</strong>. W przypadku nagłego zerwania transmisji na serwerze głównym, 
+          system automatycznie przełącza źródło na sygnał zapasowy, dzięki czemu widz unika oglądania „czarnego ekranu”. 
+          Dodatkowo w najbliższej przyszłości planowane jest zaimplementowanie analogicznego mechanizmu 
+          <strong>fallback bezpośrednio po stronie playera</strong>, co zapewni podwójną warstwę ochrony przed 
+          przerwami w dostawie sygnału.
+        </p>
+
+        <h3>Infrastruktura sieciowa i zabezpieczenia Cloudflare</h3>
+        <p>
+          Zarządzanie ruchem na brzegu sieci (edge) oraz dystrybucja danych realizowane są z wykorzystaniem platformy 
+          <strong>Cloudflare</strong>. Architektura ta pozwala na skuteczne filtrowanie ruchu oraz optymalizację dostarczania treści:
+        </p>
+
+        <ul>
+          <li>
+            <strong>DNS, CDN i Reverse Proxy:</strong> Globalna sieć Anycast Cloudflare pozwala na redukcję opóźnień (TTFB) 
+            oraz odciążenie infrastruktury iTVT poprzez efektywne keszowanie statycznych zasobów platformy.
+          </li>
+          <li>
+            <strong>Szyfrowanie HTTPS/TLS:</strong> Zastosowanie nowoczesnych standardów kryptograficznych w transmisji danych 
+            pomiędzy klientem a infrastrukturą sieciową znacząco zwiększa poufność oraz integralność przesyłanego strumienia.
+          </li>
+          <li>
+            <strong>Ochrona DDoS i WAF:</strong> Aktywne reguły bezpieczeństwa pomagają wykrywać anomalie sieciowe na wczesnym etapie 
+            oraz ograniczać skutki ataków wolumetrycznych ataków na warstwę aplikacyjną, minimalizując ryzyko przerw w dostępności usług.
+          </li>
+          <li>
+            <strong>Filtry aplikacyjne i ochrona strumienia:</strong> Wdrożone reguły cache'owania oraz polityki bezpieczeństwa 
+            warstwy aplikacyjnej utrudniają nieautoryzowane osadzanie (hotlinking) strumieni wideo, ograniczając możliwość 
+            ich odtwarzania poza oficjalnym playerem iTVT.
+          </li>
+        </ul>
 
         <h3>SSAI — monetyzacja reklam</h3>
         <p>
           System <strong>Server-Side Ad Insertion (SSAI)</strong> umo&#380;liwia
           p&#322;ynn&#261; insertcj&#281; reklam po stronie serwera, bez wp&#322;ywu
-          na jako&#347;&#263; transmisji dla widzów.
+          na jako&#347;&#263; transmisji dla widzów.</br>
+        <a href="/news/2026/06/01/index.html">&#10148; Wdrożenie SSAI w kanałach linearnych iTVT</a>
         </p>
 
         <div class="tel-box tel-bg-black tel-clr-yellow">
           <strong>PAGE 801 — ARCHITEKTURA</strong><br />
-          &#9656; Cluster: K3s (Rootless)<br />
-          &#9656; Backend: Rust / libobs-rs<br />
+          &#9656; Monitoring usług: wdrażany (Uptime Kuma)<br />
+          &#9656; Proxy/DNS: Cloudflare<br />
+          &#9656; Kontenery: Docker (Rootless)<br />
+          &#9656; Backend: Python (gstreamer) / Rust<br />
           &#9656; Streaming: MediaMTX<br />
           &#9656; Protoko&#322;y: SRT / RTMP / HLS<br />
           &#9656; SSAI: Server-Side Ad Insertion<br />
