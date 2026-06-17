@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RevoStream — moduł transmisyjny IPTV w czystym Rustcie</title>
-  <meta name="description" content="Moduł transmisyjny RevoStream, oparty o libobs-rs w języku Rust, został całkowicie oczyszczony z surowych odwołań do C." />
+  <title>Jak porzuciliśmy OBS Studio dla Rusta, czyli jak powstało RevoStream</title>
+  <meta name="description" content="Jak porzuciliśmy OBS Studio dla Rusta – Narodziny RevoStream w iTVT Poland Group" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://press.itvt.xyz/news/2026/06/10/" />
   <link rel="alternate" type="application/rss+xml" title="iTVT Press RSS" href="../../../../rss.xml" />
@@ -71,7 +71,7 @@
       </pre>
     </h1>
     <div class="header-badge">
-      AKTUALNO&#346;CI *** REVOSTREAM — MODUŁ TRANSMISYJNY IPTV W CZYSTYM RUSTCIE
+      AKTUALNO&#346;CI *** JAK PORZUCILIŚMY OBS STUDIO DLA RUSTA, CZYLI JAK POWSTAŁO REVOSTREAM
     </div>
     <div class="tel-colorbar">
       <div class="tel-colorbar-item is-red"></div>
@@ -134,22 +134,42 @@
           <span class="post-cat">Technologia</span>
           <span>2026-06-10</span>
         </div>
-        <h2 class="article-title">RevoStream — moduł transmisyjny IPTV w czystym Rustcie</h2>
+        <h2 class="article-title">Jak porzuciliśmy OBS Studio dla Rusta, czyli jak powstało RevoStream</h2>
         <p class="article-lead"></p>
         
         <div class="article-body">
-          <p>Zespół iTVT Poland Group ogłasza pomyślną migrację modułu transmisyjnego <strong>RevoStream</strong> do czystego Rusta. Biblioteka <code>libobs-rs</code> została zremasterowana i pozbawiona surowych odwołań do języka C.</p>
-<p>Kluczowe korzyści:</p>
+          <p>W świecie profesjonalnego streamingu wideo elastyczność i niezawodność to pojęcia nadrzędne. Z czasem każdy ambitny projekt trafia na ścianę ograniczeń narzucanych przez gotowe oprogramowanie. Taki moment nadszedł również u nas.</p>
+<p>Popularny program OBS Studio, choć niezwykle potężny, w pewnym momencie przestał nam wystarczać. Główną barierą okazały się ograniczenia w łatwym wdrażaniu własnych, głębokich modyfikacji backendowych. Przykładowo, implementacja autorskiego, bezpiecznego systemu uwierzytelniania tokenowego za pomocą tradycyjnych wtyczek (pluginów) okazała się drogą pełną kompromisów i mało wygodną opcją deweloperską.</p>
+<p>W ten sposób, z potrzeby absolutnej kontroli nad kodem i architekturą, narodził się projekt <strong>RevoStream</strong>.</p>
+<h2>Nowoczesny Stack Technologiczny: Rust + Tauri + Svelte</h2>
+<p>Zamiast reanimować stare rozwiązania, postawiliśmy na całkowicie nowy, potężny fundament. RevoStream został zaprojektowany od zera w oparciu o technologie, które gwarantują lekkość, nieprzeciętną wydajność oraz błyskawiczny rozwój:</p>
 <ul>
-<li>Eliminacja błędów alokacji pamięci w trakcie emisji na żywo</li>
-<li>Zwiększona stabilność procesu renderowania klatek</li>
-<li>Bezpieczeństwo pamięci dzięki mechanizmom właściwym Rust</li>
-<li>Lepsza wydajność przy transmisji strumieniowej w SRT</li>
+<li><strong>Rust (Backend Core):</strong> Gwarant bezpieczeństwa i szybkości na poziomie systemowym.</li>
+<li><strong>Tauri (Desktop Framework):</strong> Pozwala na budowanie lekkich i bezpiecznych aplikacji desktopowych bez narzutu pamięciowego, jaki niesie ze sobą np. Electron.</li>
+<li><strong>Svelte (Frontend):</strong> Zapewnia ultrawydajny, reaktywny i czytelny interfejs użytkownika, który nie obciąża procesora podczas kluczowych operacji live.</li>
 </ul>
-<p>Kod źródłowy modułu dostępny jest na repozytorium <a href="https://github.com/open-itvt">github.com/open-itvt</a>.</p>
+<h3>Remaster <code>libobs-rs</code> i pożegnanie z dziedzictwem C</h3>
+<p>Najważniejszy przełom dokonał się jednak pod maską. Zespół inżynieryjny iTVT Poland Group ogłasza <strong>pomyślną migrację modułu transmisyjnego RevoStream do czystego Rusta</strong>.</p>
+<p>Kluczowym elementem tej operacji było zremasterowanie biblioteki <code>revo-lib</code> na oparcie w <code>libobs-rs</code>. Została ona całkowicie pozbawiona surowych, niebezpiecznych odwołań (<em>raw pointers</em>) do języka C. Dzięki temu przepisaliśmy cykl życia obiektów na natywne mechanizmy zarządzania pamięcią Rusta.</p>
+<h2>Kluczowe Korzyści dla Transmisji Live</h2>
+<p>Eliminacja długu technologicznego i przejście na bezpieczną architekturę przyniosły natychmiastowe, mierzalne efekty w stabilności całego ekosystemu streamingowego:</p>
+<ul>
+<li><strong>Eliminacja wycieków pamięci:</strong> Całkowicie wykluczyliśmy błędy alokacji pamięci (memory leaks) w trakcie wymagających, wielogodzinnych emisji na żywo.</li>
+<li><strong>Pancerne renderowanie klatek:</strong> Architektura Rusta drastycznie zwiększyła stabilność procesu renderowania wideo, eliminując mikro-przycięcia (stuttering) i gubienie klatek (dropped frames).</li>
+<li><strong>Bezpieczeństwo z urzędu:</strong> Dzięki mechanizmom <em>ownership</em> i <em>borrow checker</em> właściwym dla języka Rust, aplikacja jest odporna na błędy typu <em>data race</em> czy <em>null pointer exceptions</em>.</li>
+<li><strong>Maksymalna wydajność SRT:</strong> Nowy moduł doskonale współgra z naszym zoptymalizowanym backendem, oferując jeszcze lepszą wydajność i niższe opóźnienia przy wymagającej transmisji strumieniowej w protokole <strong>SRT</strong>.</li>
+</ul>
+<h2>RevoProject: Techniczne ramię iTVT i ruch Open Source</h2>
+<p>W ramach iTVT Poland Group powołaliśmy do życia nową podorganizację – <strong>RevoProject</strong>. Jest to dedykowana przestrzeń dla naszych najbardziej zaawansowanych, stricte technicznych programów i narzędzi deweloperskich.</p>
+<p>Wierzymy w transparentność i rozwój napędzany przez społeczność, dlatego nie zamykamy tego rozwiązania za drzwiami naszej organizacji. Kod źródłowy modułu transmisyjnego jest w pełni otwarty.</p>
+<p><strong>Dołącz do rozwoju projektu:</strong> </p>
+<p>Pełny kod źródłowy oraz dokumentacja techniczna dostępne są w oficjalnym repozytorium:</p>
+<blockquote>
+<p><a href="https://github.com/RevoProject/revo-stream">GitHub: RevoProject/revo-stream</a></p>
+</blockquote>
 
         </div>
-        <p class="post-author" style="font-family:var(--font-mono);font-size:0.78rem;color:var(--ink-dim);margin-top:1rem;">Autor: Kamil (Klubuntu)</p>
+        <p class="post-author" style="font-family:var(--font-mono);font-size:0.78rem;color:var(--ink-dim);margin-top:1rem;">Autor: Kamil (Klubuntu) - Founder & Lead Developer</p>
         <a href="../../../../index.html" class="post-readmore">&#10148; Powrót do aktualno&#347;ci</a>
       </article>
     </div>

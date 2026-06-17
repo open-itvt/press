@@ -85,13 +85,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://press.itvt.xyz/kategoria/press-release/</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://press.itvt.xyz/kategoria/produkt/</loc>
+    <loc>https://press.itvt.xyz/kategoria/press/</loc>
     <lastmod>2026-06-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

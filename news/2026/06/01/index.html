@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wdrożenie SSAI w platformie streamingowej iTVT</title>
-  <meta name="description" content="iTVT wdraża zaawansowany system Server-Side Ad Insertion (SSAI) wraz z integracją odtwarzacza i protokołu SRT." />
+  <title>Wdrożenie SSAI w kanałach linearnych iTVT</title>
+  <meta name="description" content="Rewolucja w streamingu - iTVT wdraża zaawansowany system Server-Side Ad Insertion wraz z integracją protokołu SRT." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://press.itvt.xyz/news/2026/06/01/" />
   <link rel="alternate" type="application/rss+xml" title="iTVT Press RSS" href="../../../../rss.xml" />
@@ -71,7 +71,7 @@
       </pre>
     </h1>
     <div class="header-badge">
-      AKTUALNO&#346;CI *** WDROŻENIE SSAI W PLATFORMIE STREAMINGOWEJ ITVT
+      AKTUALNO&#346;CI *** WDROŻENIE SSAI W KANAŁACH LINEARNYCH ITVT
     </div>
     <div class="tel-colorbar">
       <div class="tel-colorbar-item is-red"></div>
@@ -134,22 +134,47 @@
           <span class="post-cat">Infrastruktura</span>
           <span>2026-06-01</span>
         </div>
-        <h2 class="article-title">Wdrożenie SSAI w platformie streamingowej iTVT</h2>
+        <h2 class="article-title">Wdrożenie SSAI w kanałach linearnych iTVT</h2>
         <p class="article-lead"></p>
         
         <div class="article-body">
-          <p>Infrastruktura iTVT Poland Group przeszła gruntowną optymalizację backendu. Wdrożono <strong>Server-Side Ad Insertion (SSAI)</strong> oraz bezpośrednią integrację dedykowanego odtwarzacza z wydajnym protokołem SRT.</p>
-<p>Co się zmieniło:</p>
+          <h3>Jak iTVT Poland Group optymalizuje backend i wprowadza zaawansowaną monetyzację VAST/VMAP</h3>
+<p>Dynamiczny rozwój rynku wideo online stawia przed nadawcami ogromne wyzwania technologiczne. W walce o widza liczy się każda milisekunda opóźnienia, stabilność transferu danych oraz absolutna płynność dostarczania treści. W odpowiedzi na te wymagania zespół inżynieryjny <strong>iTVT Poland Group</strong> przeprowadził gruntowną modernizację swojej całego backendu streamingowego.</p>
+<p>Głównym celem wdrożenia było nie tylko podniesienie wydajności i bezpieczeństwa warstwy serwerowej, ale przede wszystkim implementacja bezkompromisowego systemu monetyzacji opartego na standardach VAST/VMAP. Oto kulisy techniczne zmian, które redefiniują komfort oglądania oraz efektywność reklamową w naszym ekosystemie.</p>
+<h3>Architektura nowej generacji: SRT, Rootless Docker i pancerne bezpieczeństwo</h3>
+<p>Fundamentem zmian stała się głęboka optymalizacja warstwy serwerowej. Tradycyjne, obciążające metody dystrybucji sygnału ustąpiły miejsca nowoczesnym rozwiązaniom zorientowanym na minimalne zużycie zasobów przy maksymalnej przepustowości sieciowej.</p>
 <ul>
-<li>System SSAI umożliwia płynną insertcję reklam po stronie serwera</li>
-<li>Dedykowany odtwarzacz zoptymalizowany pod kątem SRT</li>
-<li>Klaster K3s działa w trybie rootless dla większego bezpieczeństwa</li>
-<li>Pancerne powiadomienia i monitoring dla natychmiastowej reakcji na anomalie</li>
+<li><strong>Natywna integracja z protokołem SRT:</strong> Nasz dedykowany odtwarzacz wideo otrzymał bezpośrednie wsparcie dla protokołu SRT (<em>Secure Reliable Transport</em>). Dzięki temu transmisje charakteryzują się ultra-niskimi opóźnieniami oraz wyjątkową odpornością na wahania jakości łączy internetowych użytkowników.</li>
+<li><strong>Izolacja i bezpieczeństwo w trybie Rootless:</strong> Całe środowisko aplikacyjne zostało osadzone w kontenerach Docker działających w trybie <em>rootless</em>. Oznacza to, że procesy wewnątrz kontenerów nie posiadają uprawnień administratora na maszynie hosta, co drastycznie minimalizuje ryzyko i odcina potencjalne wektory ataków.</li>
+<li><strong>Pancerny monitoring i prewencja:</strong> Nad stabilnością operacyjną czuwa zaawansowany, wielopoziomowy system ciągłego monitoringu. Każda, nawet najmniejsza anomalia w strumieniu danych wywołuje natychmiastową reakcję systemów naprawczych oraz generuje pancerne powiadomienia dla zespołu inżynierów, gwarantując ciągłość emisji 24/7.</li>
 </ul>
-<p>Cały ekosystem streamingowy optymalizowany jest pod kątem minimalnego zużycia zasobów przy maksymalnej wydajności sieciowej.</p>
+<h3>Koniec z buforowaniem reklam: Magia Server-Side Ad Insertion (SSAI)</h3>
+<p>Największym krokiem naprzód w obszarze monetyzacji jest pełne wdrożenie technologii <strong>Server-Side Ad Insertion (SSAI)</strong> zintegrowanej ze standardami <strong>VAST</strong> (<em>Video Ad Serving Template</em>) oraz <strong>VMAP/VMAP</strong> (<em>Video Multiple Ad Playlist / Video Ad Modeling Language</em>).</p>
+<p>W tradycyjnym modelu (Client-Side), to odtwarzacz na urządzeniu użytkownika musiał samodzielnie wywołać, pobrać i zinterpretować reklamę. Skutkowało to irytującym buforowaniem, czarnym ekranem lub nagłymi skokami głośności. W iTVT Poland Group przenieśliśmy ten proces całkowicie na stronę serwera za pomocą zaawansowanego mechanizmu tzw. <em>ad-stitching</em>:</p>
+<ul>
+<li><strong>Płynność transmisji broadcastowej:</strong> Serwer w locie parsuje tagi reklamowe i &quot;zszywa&quot; klipy wideo bezpośrednio w manifesty strumieni HLS oraz DASH jako spójne fragmenty (<em>chunks</em>). Dla końcowego odtwarzacza reklama staje się integralną częścią filmu – eliminuje to jakiekolwiek pauzy czy zacięcia.</li>
+<li><strong>Niewrażliwość na Ad-Blocki:</strong> Ponieważ reklama płynie z dokładnie tego samego źródła i w tym samym formacie co główny materiał wideo, oprogramowanie blokujące reklamy na urządzeniach klienckich jest bezradne.</li>
+<li><strong>User Experience bez kompromisów:</strong> Automatyczne wyrównywanie poziomów audio przez system SSAI raz na zawsze rozwiązuje uciążliwy problem nagłego, uderzającego dźwięku podczas bloków komercyjnych.</li>
+</ul>
+<h3>Rygorystyczne testy QA i integracja z Google IMA</h3>
+<p>Wdrożenie tak zaawansowanej telemetrii wymagało stworzenia bezkompromisowych procedur testowych (Quality Assurance). System SSAI musi precyzyjnie raportować zdarzenia analityczne do zewnętrznych domów mediowych. Nasz backend bezbłędnie zlicza i przekazuje kluczowe punkty kontrolne: <strong>Impression</strong> (wyświetlenie), <strong>FirstQuartile</strong> (obejrzenie 25%), <strong>Midpoint</strong> (50%) oraz <strong>Complete</strong> (dotarcie do końca reklamy).</p>
+<p>Aby potwierdzić stuprocentową zgodność operacyjną z globalnymi standardami, architektura została poddana rygorystycznej walidacji przy użyciu oficjalnych, referencyjnych tagów dostarczanych przez <strong>Google IMA (Interactive Media Ads)</strong>. W środowisku iTVT zaimplementowano profesjonalne linki testowe Google DoubleClick, symulujące kluczowe scenariusze emisyjne:</p>
+<ul>
+<li><strong>Weryfikacja reklam liniowych (VAST 3.0 Standard Linear):</strong>
+Za pomocą tagu Google-a badaliśmy stabilność przejścia odtwarzacza pomiędzy głównym contentem a pojedynczą reklamą typu pre-roll:
+<code>https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319075/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dlinear&amp;correlator=</code></li>
+<li><strong>Złożone struktury harmonogramów (VMAP/VMAP Pre-, Mid- i Post-roll):</strong>
+Do testowania logiki przerw reklamowych wewnątrz dłuższych transmisji wideo (szczególnie dynamicznych bloków mid-roll w środku trwania streamu) użyliśmy struktur VMAP, które pozwalają serwerowi zarządzać całą playlistą reklamową:
+<code>https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319075/external/ad_rule_samples&amp;ciu_szs=300x250&amp;ad_rule=1&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vmap&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dvmap&amp;correlator=</code></li>
+<li><strong>Obsługa interakcji użytkownika (Skippable Linear):</strong>
+Niezbędne było sprawdzenie też, czy silnik SSAI prawidłowo modyfikuje manifest w locie i natychmiastowo przywraca właściwy strumień, gdy użytkownik wejdzie w interakcję i kliknie przycisk pominięcia reklamy:
+<code>https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&amp;iu=/124319075/external/single_ad_samples&amp;ciu_szs=300x250&amp;impl=s&amp;gdfp_req=1&amp;env=vp&amp;output=vast&amp;unviewed_position_start=1&amp;cust_params=deployment%3Ddevsite%26sample_ct%3Dskippablelinear&amp;correlator=</code></li>
+</ul>
+<h3>Gotowość na wyzwania przyszłości</h3>
+<p>Dzięki połączeniu tak zoptymalizowanego backendu wideo z nowoczesnym ekosystemem reklamowym SSAI, iTVT Poland Group zyskało architekturę w pełni gotową na współpracę z dowolnym zewnętrznym domem mediowym oraz serwerami reklamowymi (<em>Ad Servers</em>). Dla naszych partnerów biznesowych oznacza to gwarancję stabilnej monetyzacji i precyzyjnych statystyk. Z kolei dla naszych widzów – najwyższą dostępną jakość technologiczną, płynność odbioru i brak uciążliwego buforowania, niezależnie od typu urządzenia końcowego.</p>
 
         </div>
-        <p class="post-author" style="font-family:var(--font-mono);font-size:0.78rem;color:var(--ink-dim);margin-top:1rem;">Autor: iTVT Engineering Team</p>
+        <p class="post-author" style="font-family:var(--font-mono);font-size:0.78rem;color:var(--ink-dim);margin-top:1rem;">Autor: Kamil (Klubuntu) - Founder & Lead Developer</p>
         <a href="../../../../index.html" class="post-readmore">&#10148; Powrót do aktualno&#347;ci</a>
       </article>
     </div>

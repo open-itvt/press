@@ -5,12 +5,12 @@
     <link>https://press.itvt.xyz/</link>
     <description>Oficjalny kanał RSS press iTVT Poland Group</description>
     <language>pl</language>
-    <lastBuildDate>2026-06-16</lastBuildDate>
+    <lastBuildDate>2026-06-17</lastBuildDate>
     <atom:link href="https://press.itvt.xyz/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Migracja repozytoriów iTVT na organizację open-itvt</title>
       <link>https://press.itvt.xyz/news/2026/06/15/migracja-hubu/</link>
-      <description><![CDATA[iTVT Poland Group przeprowadziła migrację repozytoriów z konta osobistego na organizację GitHub open-itvt.]]></description>
+      <description><![CDATA[11 czerwca 2026 roku w historii commitów repozytorium `hub` oraz `home` pojawiły się wpisy o usunięciu starych połączeń z hubem iTVT oraz migracji sekcji Apps do wydzielonego repozytorium `vod`. To największa jak dotąd restrukturyzacja ekosystemu open source iTVT Poland Group. Organizacja **open-itvt** została utworzona 7 stycznia 2026 roku, jednak najstarsze repozytorium — `hub` — istnieje od 17 czerwca 2024 roku, pierwotnie na koncie osobistym założyciela Kamila (Klubuntu). Ekosystem open-itvt obejmuje obecnie 9 repozytoriów: hub, home, vod, desktop-app, desktop-app-dist, qr-shorter, roadmap, coming-soon-itvt oraz press. Wszystkie są publicznie dostępne na [github.com/open-itvt](https://github.com/open-itvt). <a href="https://press.itvt.xyz/news/2026/06/15/migracja-hubu/">zobacz więcej →</a>]]></description>
       <dc:creator>iTVT Engineering Team</dc:creator>
       <pubDate>2026-06-15</pubDate>
       <guid isPermaLink="false">itvt-press-20260615-migracja-hubu</guid>
@@ -19,44 +19,44 @@
     <item>
       <title>iTVT Poland Group uruchamia oficjalny blog prasowy</title>
       <link>https://press.itvt.xyz/news/2026/06/15/</link>
-      <description><![CDATA[iTVT Poland Group publikuje oficjalny blog prasowy z informacjami dla dziennikarzy i mediów na licencji CC BY 4.0.]]></description>
+      <description><![CDATA[Transparentność i otwartość to fundamenty, na których buduje się zaufanie w nowoczesnym świecie mediów cyfrowych. Idąc tym śladem, zespół **iTVT Poland Group** z dumą ogłasza oficjalne uruchomienie swojego dedykowanego bloga prasowego, dostępnego pod adresem [press.itvt.xyz](https://press.itvt.xyz). To zupełnie nowa przestrzeń stworzona bezpośrednio z myślą o dziennikarzach, recenzentach, partnerach branżowych oraz wszystkich tych, którzy chcą zajrzeć za kulisy naszej platformy telewizji internetowej IPTV. ### Kompleksowe centrum wiedzy dla mediów Oficjalny portal prasowy został zaprojektowany jako jedno, centralne źródło prawdy o projekcie, eliminując potrzebę szukania rozproszonych informacji w sieci. Od teraz przedstawiciele mediów i publicyści mają natychmiastowy dostęp do rzetelnych, autoryzowanych i stale... <a href="https://press.itvt.xyz/news/2026/06/15/">zobacz więcej →</a>]]></description>
       <dc:creator>Kamil (Klubuntu)</dc:creator>
       <pubDate>2026-06-15</pubDate>
       <guid isPermaLink="false">itvt-press-20260615-15</guid>
-      <category>Press Release</category>
+      <category>Press</category>
     </item>
     <item>
-      <title>iVOD — centralny punkt dostępu do kanałów streamingowych IPTV</title>
+      <title>iVOD — centralny punkt dostępu do kanałów streamingowych iTVT</title>
       <link>https://press.itvt.xyz/news/2026/06/11/</link>
-      <description><![CDATA[Platforma iVOD (vod.itvt.xyz) - centrum dostępu do kanałów i treści streamingowych iTVT. Multi-channel streaming.]]></description>
-      <dc:creator>iTVT Product Team</dc:creator>
+      <description><![CDATA[Wygoda użytkownika, niezależność od globalnych monopolistów oraz redukcja kosztów infrastruktury to trzy filary, na których zbudowano nowoczesną odsłonę platformy **iVOD**. Dostępna pod adresem [vod.itvt.xyz](https://vod.itvt.xyz), platforma ta stanowi obecnie technologiczne serce i centralny punkt dostępu do wszystkich kanałów oraz materiałów wideo tworzonych przez **iTVT Poland Group**. Zamiast powielać schematy tradycyjnych, scentralizowanych serwisów streamingowych, zespół iTVT wdrożył unikalną hybrydę: połączył stabilny i wolny od cenzury backend sieci **Odysee (protokół LBRY)** z całkowicie autorskim, głęboko zoptymalizowanym odtwarzaczem wideo. ### Decentralizacja w praktyce: Backend oparty na sieci Odysee Przeniesienie ciężaru hostowania i dystrybucji plików wideo na architekturę Odysee to strategiczny krok naprzód. Jak to... <a href="https://press.itvt.xyz/news/2026/06/11/">zobacz więcej →</a>]]></description>
+      <dc:creator>Kamil (Klubuntu) - Founder & Lead Developer</dc:creator>
       <pubDate>2026-06-11</pubDate>
       <guid isPermaLink="false">itvt-press-20260611-11</guid>
-      <category>Produkt</category>
+      <category>Technologia</category>
     </item>
     <item>
-      <title>RevoStream — moduł transmisyjny IPTV w czystym Rustcie</title>
+      <title>Jak porzuciliśmy OBS Studio dla Rusta, czyli jak powstało RevoStream</title>
       <link>https://press.itvt.xyz/news/2026/06/10/</link>
-      <description><![CDATA[Moduł transmisyjny RevoStream, oparty o libobs-rs w języku Rust, został całkowicie oczyszczony z surowych odwołań do C.]]></description>
-      <dc:creator>Kamil (Klubuntu)</dc:creator>
+      <description><![CDATA[W świecie profesjonalnego streamingu wideo elastyczność i niezawodność to pojęcia nadrzędne. Z czasem każdy ambitny projekt trafia na ścianę ograniczeń narzucanych przez gotowe oprogramowanie. Taki moment nadszedł również u nas. Popularny program OBS Studio, choć niezwykle potężny, w pewnym momencie przestał nam wystarczać. Główną barierą okazały się ograniczenia w łatwym wdrażaniu własnych, głębokich modyfikacji backendowych. Przykładowo, implementacja autorskiego, bezpiecznego systemu uwierzytelniania tokenowego za pomocą tradycyjnych wtyczek (pluginów) okazała się drogą pełną kompromisów i mało wygodną opcją deweloperską. W ten sposób, z potrzeby absolutnej kontroli nad kodem i architekturą, narodził się projekt **RevoStream**. ## Nowoczesny Stack Technologiczny: Rust + Tauri +... <a href="https://press.itvt.xyz/news/2026/06/10/">zobacz więcej →</a>]]></description>
+      <dc:creator>Kamil (Klubuntu) - Founder & Lead Developer</dc:creator>
       <pubDate>2026-06-10</pubDate>
       <guid isPermaLink="false">itvt-press-20260610-10</guid>
       <category>Technologia</category>
     </item>
     <item>
-      <title>Wdrożenie SSAI w platformie streamingowej iTVT</title>
+      <title>Wdrożenie SSAI w kanałach linearnych iTVT</title>
       <link>https://press.itvt.xyz/news/2026/06/01/</link>
-      <description><![CDATA[iTVT wdraża zaawansowany system Server-Side Ad Insertion (SSAI) wraz z integracją odtwarzacza i protokołu SRT.]]></description>
-      <dc:creator>iTVT Engineering Team</dc:creator>
+      <description><![CDATA[### Jak iTVT Poland Group optymalizuje backend i wprowadza zaawansowaną monetyzację VAST/VMAP Dynamiczny rozwój rynku wideo online stawia przed nadawcami ogromne wyzwania technologiczne. W walce o widza liczy się każda milisekunda opóźnienia, stabilność transferu danych oraz absolutna płynność dostarczania treści. W odpowiedzi na te wymagania zespół inżynieryjny **iTVT Poland Group** przeprowadził gruntowną modernizację swojej całego backendu streamingowego. Głównym celem wdrożenia było nie tylko podniesienie wydajności i bezpieczeństwa warstwy serwerowej, ale przede wszystkim implementacja bezkompromisowego systemu monetyzacji opartego na standardach VAST/VMAP. Oto kulisy techniczne zmian, które redefiniują komfort oglądania oraz efektywność reklamową w naszym ekosystemie. ### Architektura nowej generacji: SRT, Rootless... <a href="https://press.itvt.xyz/news/2026/06/01/">zobacz więcej →</a>]]></description>
+      <dc:creator>Kamil (Klubuntu) - Founder & Lead Developer</dc:creator>
       <pubDate>2026-06-01</pubDate>
       <guid isPermaLink="false">itvt-press-20260601-01</guid>
       <category>Infrastruktura</category>
     </item>
     <item>
-      <title>Rozszerzenie sieci partnerskiej iTVT o nowych twórców internetowych</title>
+      <title>Znani twórcy internetowi parnerami iTVT</title>
       <link>https://press.itvt.xyz/news/2024/10/07/</link>
-      <description><![CDATA[iTVT Poland Group rozszerza sieć partnerską o twórców internetowych: Klubuntu, Reqqel, Oliwierdsn/HeXn.]]></description>
-      <dc:creator>iTVT Partnership Team</dc:creator>
+      <description><![CDATA[iTVT Poland Group aktywnie współpracuje z niezależnymi twórcami internetowymi, oferując kompleksowe usługi z zakresu produkcji medialnej iTVT zapewnia im stabilny hosting oraz wsparcie developerskie. Naszym celem jest dostarczenie infrastruktury, która pozwala się skupić naszym twórcom, na kreowaniu swoich unikalnych treści, bez dodatkowego obciążania ich, do nadzorowania dodatkowych rzeczy ### Poznajcie naszych kluczowych partnerów technologicznych i medialnych: * **Klubuntu** ([@klubuntu](https://youtube.com/@klubuntu)) — 20-letni programista i projektant graficzny oraz systemów sieciowych, Founder i CEO iTVT. Odpowiada za rozwój architektury backendowej całego projektu, optymalizację kodu do ekstremalnych warunków, aż po wdrażanie nowoczesnych rozwiązań transmisyjnych, które stanowią fundament dla naszej grupy medialnej * **Reqqel** ([@reqqelen](https://youtube.com/@reqqelen))... <a href="https://press.itvt.xyz/news/2024/10/07/">zobacz więcej →</a>]]></description>
+      <dc:creator>Kamil (Klubuntu) - Founder & Lead Developer</dc:creator>
       <pubDate>2024-10-07</pubDate>
       <guid isPermaLink="false">itvt-press-20241007-07</guid>
       <category>Partnerstwo</category>
