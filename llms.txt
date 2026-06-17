@@ -2,38 +2,33 @@
 
 > Oficjalny blog prasowy iTVT Poland Group. Informacje dla mediów, aktualności, press pack i materiały prasowe dotyczące platformy telewizji internetowej IPTV nowej generacji.
 
-## O projekcie
-
-iTVT Poland Group to nowoczesna platforma telewizji internetowej IPTV założona 10 marca 2023 roku w Warszawie (Al. Solidarność 68/121, 00-240). Projekt oferuje dostęp do kanałów TV online, aplikacje na Windows, Linux, macOS i Android, a także zaawansowane rozwiązania streamingowe oparte o protokoły SRT i RTMP.
-
-- Stack: Docker (Rootless), Gstreamer / Rust, SRT/RTMP/HLS, MediaMTX, SSAI
-- Licencja: Open Source (CC BY 4.0)
-- Organizacja GitHub: github.com/open-itvt
-- Kanał RSS: https://press.itvt.xyz/rss.xml
+iTVT Poland Group to nowoczesna platforma telewizji internetowej IPTV założona 10 marca 2023 roku w Warszawie (Al. Solidarność 68/121, 00-240). Projekt oferuje dostęp do kanałów TV online, aplikacje na Windows, Linux, macOS i Android, a także zaawansowane rozwiązania streamingowe oparte o protokoły SRT i RTMP. Stack: Docker (Rootless), Gstreamer / Rust, SRT/RTMP/HLS, MediaMTX, SSAI. Licencja: CC BY 4.0. Kod: [github.com/open-itvt](https://github.com/open-itvt). Kanał RSS: [press.itvt.xyz/rss.xml](https://press.itvt.xyz/rss.xml).
 
 ## Strony główne
 
-- Strona główna: https://press.itvt.xyz/
-- Wydanie specjalne: https://press.itvt.xyz/wydanie.html
-- Media o nas: https://press.itvt.xyz/media.html
-- Kamienie milowe: https://press.itvt.xyz/historia.html
-- Zespół: https://press.itvt.xyz/zespol.html
-- Kontakt: https://press.itvt.xyz/kontakt.html
+- [Blog prasowy / Aktualności](https://press.itvt.xyz/): Strona główna bloga i listy newsów
+- [Wydanie specjalne](https://press.itvt.xyz/wydanie.html): Artykuł o platformie iTVT i jej architekturze
+- [Media — Tak Mówią o Nas](https://press.itvt.xyz/media.html): Cytaty i recenzje prasowe
+- [Kamienie milowe](https://press.itvt.xyz/historia.html): Historia rozwoju projektu od 2023 roku
+- [Nasz zespół](https://press.itvt.xyz/zespol.html): Zespół i partnerzy iTVT
+- [Kontakt / Social Media](https://press.itvt.xyz/kontakt.html): Dane kontaktowe i linki społecznościowe
+- [Architektura](https://press.itvt.xyz/architektura.html): Stack technologiczny platformy
+- [Polityka prywatności](https://press.itvt.xyz/polityka-prywatnosci.html): Informacje RODO i ochrona danych
 
 ## Aktualności
 
-- 2026-06-15: Migracja repozytoriów iTVT na organizację open-itvt | https://press.itvt.xyz/news/2026/06/15/migracja-hubu/
-- 2026-06-15: iTVT Poland Group uruchamia oficjalny blog prasowy | https://press.itvt.xyz/news/2026/06/15/
-- 2026-06-11: iVOD — centralny punkt dostępu do kanałów streamingowych iTVT | https://press.itvt.xyz/news/2026/06/11/
-- 2026-06-10: Jak porzuciliśmy OBS Studio dla Rusta, czyli jak powstało RevoStream | https://press.itvt.xyz/news/2026/06/10/
-- 2026-06-01: Wdrożenie SSAI w kanałach linearnych iTVT | https://press.itvt.xyz/news/2026/06/01/
-- 2024-10-07: Znani twórcy internetowi parnerami iTVT | https://press.itvt.xyz/news/2024/10/07/
+- [2026-06-15: Migracja repozytoriów iTVT na organizację open-itvt](https://press.itvt.xyz/news/2026/06/15/migracja-hubu/): Pełny artykuł w blogu prasowym
+- [2026-06-15: iTVT Poland Group uruchamia oficjalny blog prasowy](https://press.itvt.xyz/news/2026/06/15/): Pełny artykuł w blogu prasowym
+- [2026-06-11: iVOD — centralny punkt dostępu do kanałów streamingowych iTVT](https://press.itvt.xyz/news/2026/06/11/): Pełny artykuł w blogu prasowym
+- [2026-06-10: Jak porzuciliśmy OBS Studio dla Rusta, czyli jak powstało RevoStream](https://press.itvt.xyz/news/2026/06/10/): Pełny artykuł w blogu prasowym
+- [2026-06-01: Wdrożenie SSAI w kanałach linearnych iTVT](https://press.itvt.xyz/news/2026/06/01/): Pełny artykuł w blogu prasowym
+- [2024-10-07: Znani twórcy internetowi parnerami iTVT](https://press.itvt.xyz/news/2024/10/07/): Pełny artykuł w blogu prasowym
 
 ## Social Media
 
-- YouTube: @itvt_pl (https://youtube.com/@itvt_pl)
-- Instagram: @itvt_poland (https://instagram.com/itvt_poland)
-- TikTok: @itvt_poland (https://tiktok.com/@itvt_poland)
-- X: @itvt_pl (https://x.com/itvt_pl)
-- GitHub: open-itvt (https://github.com/open-itvt)
-- Discord: https://discord.gg/QptUUsXQCf
+- [YouTube @itvt_pl](https://youtube.com/@itvt_pl)
+- [Instagram @itvt_poland](https://instagram.com/itvt_poland)
+- [TikTok @itvt_poland](https://tiktok.com/@itvt_poland)
+- [X @itvt_pl](https://x.com/itvt_pl)
+- [GitHub open-itvt](https://github.com/open-itvt)
+- [Discord](https://discord.gg/QptUUsXQCf)
