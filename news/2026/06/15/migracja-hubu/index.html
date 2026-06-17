@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jak porzuciliśmy OBS Studio dla Rusta, czyli jak powstało RevoStream</title>
-  <meta name="description" content="Jak porzuciliśmy OBS Studio dla Rusta – Narodziny RevoStream w iTVT Poland Group" />
+  <title>Migracja repozytoriów iTVT na organizację open-itvt</title>
+  <meta name="description" content="Migracja repozytoriów - iTVT Poland Group" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <link rel="canonical" href="https://press.itvt.xyz/news/2026/06/10/" />
-  <link rel="alternate" type="application/rss+xml" title="iTVT Press RSS" href="../../../../rss.xml" />
-  <link rel="alternate" hreflang="pl" href="https://press.itvt.xyz/news/2026/06/10/" />
-  <link rel="alternate" hreflang="x-default" href="https://press.itvt.xyz/news/2026/06/10/" />
+  <link rel="canonical" href="https://press.itvt.xyz/news/2026/06/15/migracja-hubu/" />
+  <link rel="alternate" type="application/rss+xml" title="iTVT Press RSS" href="../../../../../rss.xml" />
+  <link rel="alternate" hreflang="pl" href="https://press.itvt.xyz/news/2026/06/15/migracja-hubu/" />
+  <link rel="alternate" hreflang="x-default" href="https://press.itvt.xyz/news/2026/06/15/migracja-hubu/" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -26,7 +26,7 @@
     ]
   }
   </script>
-  <link rel="sitemap" type="application/xml" href="../../../../sitemap.xml" title="Sitemap" />
+  <link rel="sitemap" type="application/xml" href="../../../../../sitemap.xml" title="Sitemap" />
   <meta property="og:image" content="https://press.itvt.xyz/img/og-image.jpg" />
   <meta property="og:image:width" content="1375" />
   <meta property="og:image:height" content="768" />
@@ -50,8 +50,8 @@
 
   <header class="newspaper-header">
     <div class="tel-page-header">
-      <span>TELEGAZETA  <span class="page-num">PAGE 113</span></span>
-      <span>press.itvt.xyz/news/2026/06/10/</span>
+      <span>TELEGAZETA  <span class="page-num">PAGE 110</span></span>
+      <span>press.itvt.xyz/news/2026/06/15/migracja-hubu/</span>
       <span id="press-date"></span>
     </div>
     <div class="header-top">
@@ -71,7 +71,7 @@
       </pre>
     </h1>
     <div class="header-badge">
-      AKTUALNO&#346;CI *** JAK PORZUCILIŚMY OBS STUDIO DLA RUSTA, CZYLI JAK POWSTAŁO REVOSTREAM
+      AKTUALNO&#346;CI *** MIGRACJA REPOZYTORIÓW ITVT NA ORGANIZACJĘ OPEN-ITVT
     </div>
     <div class="tel-colorbar">
       <div class="tel-colorbar-item is-red"></div>
@@ -93,13 +93,13 @@
  | | \| |__/ |___ _/\_
         </pre>
         <nav class="newspaper-nav">
-          <a href="../../../../index.html" class="nav-link">&#10148; AKTUALNO&#346;CI</a>
-          <a href="../../../../wydanie.html" class="nav-link">&#10148; WYDANIE G&#321;ÓWNE</a>
-          <a href="../../../../media.html" class="nav-link">&#10148; MEDIA - TAK MÓWIĄ O NAS</a>
-          <a href="../../../../historia.html" class="nav-link">&#10148; KAMIENIE MILOWE</a>
-          <a href="../../../../zespol.html" class="nav-link">&#10148; NASZ ZESPÓŁ</a>
-          <a href="../../../../kontakt.html" class="nav-link">&#10148; KONTAKT / SOCIAL</a>
-          <a href="../../../../rss.xml" class="nav-link" target="_blank">&#10148; KANA&#321; RSS</a>
+          <a href="../../../../../index.html" class="nav-link">&#10148; AKTUALNO&#346;CI</a>
+          <a href="../../../../../wydanie.html" class="nav-link">&#10148; WYDANIE G&#321;ÓWNE</a>
+          <a href="../../../../../media.html" class="nav-link">&#10148; MEDIA - TAK MÓWIĄ O NAS</a>
+          <a href="../../../../../historia.html" class="nav-link">&#10148; KAMIENIE MILOWE</a>
+          <a href="../../../../../zespol.html" class="nav-link">&#10148; NASZ ZESPÓŁ</a>
+          <a href="../../../../../kontakt.html" class="nav-link">&#10148; KONTAKT / SOCIAL</a>
+          <a href="../../../../../rss.xml" class="nav-link" target="_blank">&#10148; KANA&#321; RSS</a>
                   </nav>
       </section>
 
@@ -131,46 +131,40 @@
     <div class="content-column">
       <article>
         <div class="post-meta">
-          <span class="post-cat">Technologia</span>
-          <span>2026-06-10</span>
+          <span class="post-cat">Infrastruktura</span>
+          <span>2026-06-15</span>
         </div>
-        <h2 class="article-title">Jak porzuciliśmy OBS Studio dla Rusta, czyli jak powstało RevoStream</h2>
+        <h2 class="article-title">Migracja repozytoriów iTVT na organizację open-itvt</h2>
         <p class="article-lead"></p>
         
         <div class="article-body">
-          <p>W świecie profesjonalnego streamingu wideo elastyczność i niezawodność to pojęcia nadrzędne. Z czasem każdy ambitny projekt trafia na ścianę ograniczeń narzucanych przez gotowe oprogramowanie. Taki moment nadszedł również u nas.</p>
-<p>Popularny program OBS Studio, choć niezwykle potężny, w pewnym momencie przestał nam wystarczać. Główną barierą okazały się ograniczenia w łatwym wdrażaniu własnych, głębokich modyfikacji backendowych. Przykładowo, implementacja autorskiego, bezpiecznego systemu uwierzytelniania tokenowego za pomocą tradycyjnych wtyczek (pluginów) okazała się drogą pełną kompromisów i mało wygodną opcją deweloperską.</p>
-<p>W ten sposób, z potrzeby absolutnej kontroli nad kodem i architekturą, narodził się projekt <strong>RevoStream</strong>.</p>
-<h2>Nowoczesny Stack Technologiczny: Rust + Tauri + Svelte</h2>
-<p>Zamiast reanimować stare rozwiązania, postawiliśmy na całkowicie nowy, potężny fundament. RevoStream został zaprojektowany od zera w oparciu o technologie, które gwarantują lekkość, nieprzeciętną wydajność oraz błyskawiczny rozwój:</p>
+          <h3>Historyczna migracja i porządki w kodzie: Narodziny <code>open-itvt</code></h3>
+<p>Droga do pełnej decentralizacji i otwartości kodu wymagała gruntownych zmian architektonicznych. Choć dedykowana organizacja <strong>open-itvt</strong> została oficjalnie utworzona 7 stycznia 2026 roku, korzenie kodu sięgają znacznie głębiej. Najstarsze i kluczowe repozytorium całego projektu – <code>hub</code> – istnieje już od 17 czerwca 2024 roku i pierwotnie rozwiane było na osobistym koncie założyciela platformy, Kamila (Klubuntu).</p>
+<p>Przełom przyniósł nam czerwiec 2026 roku. W historii commitów repozytoriów <code>hub</code> oraz <code>home</code> datowanych na <strong>11 czerwca 2026 roku</strong> pojawiły się kluczowe wpisy, które oficjalnie przypieczętowały nową erę. Inżynierowie iTVT dokonali wtedy głębokich czystek, usuwając stare, przestarzałe połączenia z hubem oraz decydując się na pełną modularyzację systemu. W ramach tych commitów sekcja <em>Apps</em> została całkowicie wydzielona i przeniesiona do nowo utworzonego, dedykowanego repozytorium <code>vod</code>.</p>
+<p>Jest to jak dotąd największa i najbardziej skomplikowana restrukturyzacja techniczna w historii iTVT Poland Group. Dzięki temu podziałowi ekosystem stał się bardziej przejrzysty, lżejszy i łatwiejszy w rozwoju dla zewnętrznych programistów. Obecnie cała struktura <strong>open-itvt obejmuje 9 publicznych i ogólnodostępnych repozytoriów</strong>:</p>
 <ul>
-<li><strong>Rust (Backend Core):</strong> Gwarant bezpieczeństwa i szybkości na poziomie systemowym.</li>
-<li><strong>Tauri (Desktop Framework):</strong> Pozwala na budowanie lekkich i bezpiecznych aplikacji desktopowych bez narzutu pamięciowego, jaki niesie ze sobą np. Electron.</li>
-<li><strong>Svelte (Frontend):</strong> Zapewnia ultrawydajny, reaktywny i czytelny interfejs użytkownika, który nie obciąża procesora podczas kluczowych operacji live.</li>
+<li><code>hub</code> (serce i backend projektu - pierwsza wersja vod)</li>
+<li><code>home</code> (strona główna ekosystemu)</li>
+<li><code>vod</code> (wydzielona architektura dla platformy wideo)</li>
+<li><code>desktop-app</code> oraz <code>desktop-app-dist</code> (kod źródłowy i dystrybucja aplikacji PC)</li>
+<li><code>qr-shorter</code> (narzędzie do optymalizacji odnośników)</li>
+<li><code>roadmap</code> (publiczny plan rozwoju)</li>
+<li><code>coming-soon-itvt</code> (zapowiedzi i nadchodzące funkcje)</li>
+<li><code>press</code> (kod źródłowy nowego portalu informacyjnego)</li>
 </ul>
-<h3>Remaster <code>libobs-rs</code> i pożegnanie z dziedzictwem C</h3>
-<p>Najważniejszy przełom dokonał się jednak pod maską. Zespół inżynieryjny iTVT Poland Group ogłasza <strong>pomyślną migrację modułu transmisyjnego RevoStream do czystego Rusta</strong>.</p>
-<p>Kluczowym elementem tej operacji było zremasterowanie biblioteki <code>revo-lib</code> na oparcie w <code>libobs-rs</code>. Została ona całkowicie pozbawiona surowych, niebezpiecznych odwołań (<em>raw pointers</em>) do języka C. Dzięki temu przepisaliśmy cykl życia obiektów na natywne mechanizmy zarządzania pamięcią Rusta.</p>
-<h2>Kluczowe Korzyści dla Transmisji Live</h2>
-<p>Eliminacja długu technologicznego i przejście na bezpieczną architekturę przyniosły natychmiastowe, mierzalne efekty w stabilności całego ekosystemu streamingowego:</p>
+<p>Wszystkie te zasoby można śledzić i współtworzyć pod adresem <a href="https://github.com/open-itvt">github.com/open-itvt</a></p>
+<p>Świat technologii streamingowych i otwartego oprogramowania rozwija się z dnia na dzień. Aby ułatwić pracę reporterom i nie przegapić żadnego kolejnego commitu czy wdrożenia, przygotowaliśmy dwa proste narzędzia automatyzujące komunikację:</p>
 <ul>
-<li><strong>Eliminacja wycieków pamięci:</strong> Całkowicie wykluczyliśmy błędy alokacji pamięci (memory leaks) w trakcie wymagających, wielogodzinnych emisji na żywo.</li>
-<li><strong>Pancerne renderowanie klatek:</strong> Architektura Rusta drastycznie zwiększyła stabilność procesu renderowania wideo, eliminując mikro-przycięcia (stuttering) i gubienie klatek (dropped frames).</li>
-<li><strong>Bezpieczeństwo z urzędu:</strong> Dzięki mechanizmom <em>ownership</em> i <em>borrow checker</em> właściwym dla języka Rust, aplikacja jest odporna na błędy typu <em>data race</em> czy <em>null pointer exceptions</em>.</li>
-<li><strong>Maksymalna wydajność SRT:</strong> Nowy moduł doskonale współgra z naszym zoptymalizowanym backendem, oferując jeszcze lepszą wydajność i niższe opóźnienia przy wymagającej transmisji strumieniowej w protokole <strong>SRT</strong>.</li>
+<li><strong>Subskrypcja RSS:</strong> Wszystkie nowe wpisy i komunikaty prasowe można natychmiastowo odbierać w swoim czytniku newsów poprzez plik <a href="https://www.google.com/search?q=https://press.itvt.xyz/rss.xml">press.itvt.xyz/rss.xml</a>.</li>
+<li><strong>Bezpośredni dialog:</strong> W przypadku pytań szczegółowych, chęci przeprowadzenia wywiadu z Kamilem lub Antonim, bądź uzyskania komentarza technicznego, nasz zespół pozostaje do dyspozycji poprzez kanały wskazane na stronie <a href="https://www.google.com/search?q=https://press.itvt.xyz/kontakt.html">press.itvt.xyz/kontakt.html</a>.</li>
 </ul>
-<h2>RevoProject: Techniczne ramię iTVT i ruch Open Source</h2>
-<p>W ramach iTVT Poland Group powołaliśmy do życia nową podorganizację – <strong>RevoProject</strong>. Jest to dedykowana przestrzeń dla naszych najbardziej zaawansowanych, stricte technicznych programów i narzędzi deweloperskich.</p>
-<p>Wierzymy w transparentność i rozwój napędzany przez społeczność, dlatego nie zamykamy tego rozwiązania za drzwiami naszej organizacji. Kod źródłowy modułu transmisyjnego jest w pełni otwarty.</p>
-<p><strong>Dołącz do rozwoju projektu:</strong> </p>
-<p>Pełny kod źródłowy oraz dokumentacja techniczna dostępne są w oficjalnym repozytorium:</p>
 <blockquote>
-<p><a href="https://github.com/RevoProject/revo-stream">GitHub: RevoProject/revo-stream</a></p>
+<p>⚠️ <strong>Ważna informacja operacyjna:</strong> Jako projekt zorientowany w pełni na cyfrową przyszłość, wszelkie zapytania oraz korespondencję obsługujemy <strong>wyłącznie drogą elektroniczną (poprzez kontakt online)</strong>. Informujemy, że iTVT Poland Group nie przyjmuje listów tradycyjnych ani przesyłek pocztowych.</p>
 </blockquote>
 
         </div>
         <p class="post-author" style="font-family:var(--font-mono);font-size:0.78rem;color:var(--ink-dim);margin-top:1rem;">Autor: Kamil (Klubuntu) - Founder & Lead Developer</p>
-        <a href="../../../../index.html" class="post-readmore">&#10148; Powrót do aktualno&#347;ci</a>
+        <a href="../../../../../index.html" class="post-readmore">&#10148; Powrót do aktualno&#347;ci</a>
       </article>
     </div>
   </main>
@@ -188,9 +182,9 @@
       <a href="https://itvt.xyz">Strona g&#322;ówna</a>
       <a href="https://github.com/open-itvt">GitHub</a>
       <a href="https://discord.gg/QptUUsXQCf">Discord</a>
-      <a href="../../../../polityka-prywatnosci.html">Polityka prywatno&#347;ci</a>
-      <a href="../../../../mapa-strony.html">Mapa strony</a>
-      <a href="../../../../rss.xml">RSS</a>
+      <a href="../../../../../polityka-prywatnosci.html">Polityka prywatno&#347;ci</a>
+      <a href="../../../../../mapa-strony.html">Mapa strony</a>
+      <a href="../../../../../rss.xml">RSS</a>
     </div>
     <p>&copy; 2026 iTVT Poland Group | CC BY 4.0</p>
   </footer>
