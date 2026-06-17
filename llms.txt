@@ -6,7 +6,7 @@
 
 iTVT Poland Group to nowoczesna platforma telewizji internetowej IPTV za&lstrok;o&zdot;ona 10 marca 2023 roku w Warszawie (Al. Solidarno&scar;ć 68/121, 00-240). Projekt oferuje dostę do kana&lstrok;&oacute;w TV online, aplikacje na Windows, Linux, macOS i Android, a tak&zdot;e zaawansowane rozwi&261;zania streamingowe oparte o protoko&lstrok;y SRT i RTMP.
 
-- Stack: Docker (Rootless), Rust / libobs-rs, SRT/RTMP/HLS, MediaMTX, SSAI
+- Stack: Docker (Rootless), Gstreamer / Rust, SRT/RTMP/HLS, MediaMTX, SSAI
 - Licencja: Open Source (CC BY 4.0)
 - Organizacja GitHub: github.com/open-itvt
 - Kana&lstrok; RSS: https://press.itvt.xyz/rss.xml
