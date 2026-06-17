@@ -8,19 +8,10 @@
     <lastBuildDate>2026-06-17</lastBuildDate>
     <atom:link href="https://press.itvt.xyz/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Migracja repozytoriów iTVT na organizację open-itvt</title>
-      <link>https://press.itvt.xyz/news/2026/06/15/migracja-hubu/</link>
-      <description><![CDATA[11 czerwca 2026 roku w historii commitów repozytorium hub oraz home pojawiły się wpisy o usunięciu starych połączeń z hubem iTVT oraz migracji sekcji Apps do wydzielonego repozytorium vod . To największa jak dotąd restrukturyzacja ekosystemu open source iTVT Poland Group. Organizacja open-itvt została utworzona 7 stycznia 2026 roku, jednak najstarsze repozytorium — hub — istnieje od 17 czerwca 2024 roku, pierwotnie na koncie osobistym założyciela Kamila (Klubuntu). Ekosystem open-itvt obejmuje obecnie 9 repozytoriów: hub, home, vod, desktop-app, desktop-app-dist, qr-shorter, roadmap, coming-soon-itvt oraz press. Wszystkie są publicznie dostępne na github.com/open-itvt . <a href="https://press.itvt.xyz/news/2026/06/15/migracja-hubu/">zobacz więcej →</a>]]></description>
-      <dc:creator>iTVT Engineering Team</dc:creator>
-      <pubDate>2026-06-15</pubDate>
-      <guid isPermaLink="false">itvt-press-20260615-migracja-hubu</guid>
-      <category>Infrastruktura</category>
-    </item>
-    <item>
       <title>iTVT Poland Group uruchamia oficjalny blog prasowy</title>
       <link>https://press.itvt.xyz/news/2026/06/15/</link>
       <description><![CDATA[Transparentność i otwartość to fundamenty, na których buduje się zaufanie w nowoczesnym świecie mediów cyfrowych. Idąc tym śladem, zespół iTVT Poland Group z dumą ogłasza oficjalne uruchomienie swojego dedykowanego bloga prasowego, dostępnego pod adresem press.itvt.xyz . To zupełnie nowa przestrzeń stworzona bezpośrednio z myślą o dziennikarzach, recenzentach, partnerach branżowych oraz wszystkich tych, którzy chcą zajrzeć za kulisy naszej platformy telewizji internetowej IPTV. Kompleksowe centrum wiedzy dla mediów Oficjalny portal prasowy został zaprojektowany jako jedno, centralne źródło prawdy o projekcie, eliminując potrzebę szukania rozproszonych informacji w sieci. Od teraz przedstawiciele mediów i publicyści mają natychmiastowy dostęp do rzetelnych, autoryzowanych i stale... <a href="https://press.itvt.xyz/news/2026/06/15/">zobacz więcej →</a>]]></description>
-      <dc:creator>Kamil (Klubuntu)</dc:creator>
+      <dc:creator>Kamil (Klubuntu) - Founder & Lead Developer</dc:creator>
       <pubDate>2026-06-15</pubDate>
       <guid isPermaLink="false">itvt-press-20260615-15</guid>
       <category>Press</category>

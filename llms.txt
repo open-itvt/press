@@ -22,7 +22,6 @@ iTVT Poland Group to nowoczesna platforma telewizji internetowej IPTV za&lstrok;
 
 ## Aktualno&scar;ci
 
-- 2026-06-15: Migracja repozytoriów iTVT na organizację open-itvt | https://press.itvt.xyz/news/2026/06/15/migracja-hubu/
 - 2026-06-15: iTVT Poland Group uruchamia oficjalny blog prasowy | https://press.itvt.xyz/news/2026/06/15/
 - 2026-06-11: iVOD — centralny punkt dostępu do kanałów streamingowych iTVT | https://press.itvt.xyz/news/2026/06/11/
 - 2026-06-10: Jak porzuciliśmy OBS Studio dla Rusta, czyli jak powstało RevoStream | https://press.itvt.xyz/news/2026/06/10/
