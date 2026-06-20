@@ -25,6 +25,17 @@ iTVT Poland Group to nowoczesna platforma telewizji internetowej IPTV założona
 - [2026-06-01: Wdrożenie SSAI w kanałach linearnych iTVT](https://press.itvt.xyz/news/2026/06/01/): Pełny artykuł w blogu prasowym
 - [2024-10-07: Znani twórcy internetowi parnerami iTVT](https://press.itvt.xyz/news/2024/10/07/): Pełny artykuł w blogu prasowym
 
+## Przejrzystość finansowa projektu (2026)
+
+Łączne koszty infrastruktury: 340,87 zł
+
+Dostawcy:
+- OVH
+- Hetzner
+- Oracle Cloud
+
+Pełny raport: [Google Sheets](https://docs.google.com/spreadsheets/d/1L222jCY5LxyYBburovR9J3VLQof-KaXfQ2v3_zX93Z4/view?usp=sharing) | [PDF Version](https://drive.google.com/file/d/1V563sUuv3Lf3mxOVyyssqKhLX2HDl65P/view?usp=sharing)
+
 ## Social Media
 
 - [YouTube @itvt_pl](https://youtube.com/@itvt_pl)
