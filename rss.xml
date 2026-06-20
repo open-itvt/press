@@ -3,9 +3,9 @@
   <channel>
     <title>iTVT Poland Group — Kanał prasowy RSS</title>
     <link>https://press.itvt.xyz/</link>
-    <description>Oficjalny kanał RSS press iTVT Poland Group</description>
+    <description>Oficjalny kanał RSS press iTVT Poland Group. iTVT publikuje raporty finansowe i stawia na zaufanie i przejrzystość projektu.</description>
     <language>pl</language>
-    <lastBuildDate>2026-06-17</lastBuildDate>
+    <lastBuildDate>2026-06-20</lastBuildDate>
     <atom:link href="https://press.itvt.xyz/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Migracja repozytoriów iTVT na organizację open-itvt</title>
