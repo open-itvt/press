@@ -8,15 +8,6 @@
     <lastBuildDate>2026-06-20</lastBuildDate>
     <atom:link href="https://press.itvt.xyz/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Przejrzystość finansowa iTVT Poland Group na rok 2026</title>
-      <link>https://press.itvt.xyz/przejrzystosc-finansowa.html</link>
-      <description><![CDATA[Publikujemy podstawowe koszty utrzymania infrastruktury w ramach polityki transparentności projektu. <a href="https://press.itvt.xyz/przejrzystosc-finansowa.html">[zobacz więcej →]</a>]]></description>
-      <dc:creator>iTVT Press Team</dc:creator>
-      <pubDate>2026-06-20</pubDate>
-      <guid isPermaLink="false">itvt-press-20260620-finansowa</guid>
-      <category>Transparentność</category>
-    </item>
-    <item>
       <title>Hub iTVT przechodzi do przeszłości — zakończona migracja na iVOD</title>
       <link>https://press.itvt.xyz/news/2026/06/20/hub-itvt-przechodzi-do-przeszlosci/</link>
       <description><![CDATA[Z dniem 20 czerwca 2026 roku o godzinie 20:00 oficjalnie zakończyliśmy wsparcie dla serwisu Hub iTVT . To ważny moment w historii projektu — zamykamy rozdział pierwszej wersji naszej platformy, by otworzyć się na nowe możliwości. Dzięki migracji będzie nam łatwiej w przyszłości wprowadzać zmiany. Zrezygnowaliśmy z wbudowanego playera w kod, przechodząc na embedowany player , co ułatwiło modułowość i przyszłe aktualizacje wewnątrz wszystkich aplikacji iTVT — z wyjątkiem aplikacji mobilnej, która czeka na wdrożenie nowych zmian w celu większej integralności z resztą naszego ekosystemu. Dziękujemy wszystkim, którzy byli z nami od początku i korzystali z pierwszej wersji naszego serwisu..... <a href="https://press.itvt.xyz/news/2026/06/20/hub-itvt-przechodzi-do-przeszlosci/">[zobacz więcej →]</a>]]></description>
@@ -87,6 +78,15 @@
       <pubDate>2024-10-07</pubDate>
       <guid isPermaLink="false">itvt-press-20241007-07</guid>
       <category>Partnerstwo</category>
+    </item>
+    <item>
+      <title>Przejrzystość finansowa iTVT Poland Group na rok 2026</title>
+      <link>https://press.itvt.xyz/przejrzystosc-finansowa.html</link>
+      <description><![CDATA[Publikujemy podstawowe koszty utrzymania infrastruktury w ramach polityki transparentności projektu. <a href="https://press.itvt.xyz/przejrzystosc-finansowa.html">[zobacz więcej →]</a>]]></description>
+      <dc:creator>iTVT Press Team</dc:creator>
+      <pubDate>2026-06-20</pubDate>
+      <guid isPermaLink="false">itvt-press-20260620-finansowa</guid>
+      <category>Transparentność</category>
     </item>
   </channel>
 </rss>
