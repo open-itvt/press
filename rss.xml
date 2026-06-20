@@ -8,6 +8,15 @@
     <lastBuildDate>2026-06-20</lastBuildDate>
     <atom:link href="https://press.itvt.xyz/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Przejrzystość finansowa iTVT Poland Group na rok 2026</title>
+      <link>https://press.itvt.xyz/przejrzystosc-finansowa.html</link>
+      <description><![CDATA[Publikujemy podstawowe koszty utrzymania infrastruktury w ramach polityki transparentności projektu. <a href="https://press.itvt.xyz/przejrzystosc-finansowa.html">[zobacz więcej →]</a>]]></description>
+      <dc:creator>iTVT Press Team</dc:creator>
+      <pubDate>2026-06-20</pubDate>
+      <guid isPermaLink="false">itvt-press-20260620-finansowa</guid>
+      <category>Transparentność</category>
+    </item>
+    <item>
       <title>Migracja repozytoriów iTVT na organizację open-itvt</title>
       <link>https://press.itvt.xyz/news/2026/06/15/migracja-hubu/</link>
       <description><![CDATA[Historyczna migracja i porządki w kodzie: Narodziny open-itvt Droga do pełnej decentralizacji i otwartości kodu wymagała gruntownych zmian architektonicznych. Choć dedykowana organizacja open-itvt została oficjalnie utworzona 7 stycznia 2026 roku, korzenie kodu sięgają znacznie głębiej. Najstarsze i kluczowe repozytorium całego projektu – hub – istnieje już od 17 czerwca 2024 roku i pierwotnie rozwiane było na osobistym koncie założyciela platformy, Kamila (Klubuntu). Przełom przyniósł nam czerwiec 2026 roku. W historii commitów repozytoriów hub oraz home datowanych na 11 czerwca 2026 roku pojawiły się kluczowe wpisy, które oficjalnie przypieczętowały nową erę. Inżynierowie iTVT dokonali wtedy głębokich czystek, usuwając stare, przestarzałe połączenia... <a href="https://press.itvt.xyz/news/2026/06/15/migracja-hubu/">[zobacz więcej →]</a>]]></description>
@@ -60,15 +69,6 @@
       <pubDate>2024-10-07</pubDate>
       <guid isPermaLink="false">itvt-press-20241007-07</guid>
       <category>Partnerstwo</category>
-    </item>
-    <item>
-      <title>Przejrzystość finansowa iTVT Poland Group na rok 2026</title>
-      <link>https://press.itvt.xyz/przejrzystosc-finansowa.html</link>
-      <description><![CDATA[Publikujemy podstawowe koszty utrzymania infrastruktury w ramach polityki transparentności projektu. <a href="https://press.itvt.xyz/przejrzystosc-finansowa.html">[zobacz więcej →]</a>]]></description>
-      <dc:creator>iTVT Press Team</dc:creator>
-      <pubDate>2026-06-20</pubDate>
-      <guid isPermaLink="false">itvt-press-20260620-finansowa</guid>
-      <category>Transparentność</category>
     </item>
   </channel>
 </rss>
