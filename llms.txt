@@ -17,6 +17,7 @@ iTVT Poland Group to nowoczesna platforma telewizji internetowej IPTV założona
 
 ## Aktualności
 
+- [2026-06-20: iTVT publikuje raport przejrzysto\u015bci finansowej na rok 2026](https://press.itvt.xyz/news/2026/06/20/transparentnosc/): Pełny artykuł w blogu prasowym
 - [2026-06-15: Migracja repozytoriów iTVT na organizację open-itvt](https://press.itvt.xyz/news/2026/06/15/migracja-hubu/): Pełny artykuł w blogu prasowym
 - [2026-06-15: iTVT Poland Group uruchamia oficjalny blog prasowy](https://press.itvt.xyz/news/2026/06/15/): Pełny artykuł w blogu prasowym
 - [2026-06-11: iVOD — centralny punkt dostępu do kanałów streamingowych iTVT](https://press.itvt.xyz/news/2026/06/11/): Pełny artykuł w blogu prasowym
