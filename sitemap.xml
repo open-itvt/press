@@ -55,6 +55,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://press.itvt.xyz/news/2026/06/20/hub-itvt-przechodzi-do-przysz-o-ci/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://press.itvt.xyz/news/2026/06/20/transparentnosc/</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -95,6 +101,12 @@
     <lastmod>2024-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://press.itvt.xyz/kategoria/produkt/</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://press.itvt.xyz/kategoria/transparentno/</loc>
